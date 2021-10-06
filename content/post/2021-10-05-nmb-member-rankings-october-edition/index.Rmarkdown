@@ -131,6 +131,7 @@ As I already mentioned, the results of the previous edition are included as well
 
 ## Method 1
 
+
 ```{r, echo=FALSE}
 reactable(g,
           columns = list(
@@ -203,6 +204,7 @@ reactable(g,
   )
 ```
 
+
 #### THE BIG NARRATIVES
 
 Cocona is the clear winner, beating the second placed Wakapon by almost 30 points! Cocona dethroned Nagisa, who however once again received the most votes, 40. Wakapon just about edged Nagisa by one point and proved to be one of the most popular members among international fans. Mikana ended not far behind the top 3 - she had actually been in a great spot at the time there had bben only about 20 votes in, as 4 people had picked her as their oshimen, while no one had picked Cocona as theirs! From then on though, many Cocona oshis started putting in their votes and turned everything in her favour.
@@ -216,6 +218,7 @@ Shinshin is another great success story - my hypothesis would be that she is ind
 Haasa is another member dropping a lot compared to last time, even though her numbers are not particularly bad - possibly just not being able to get as many votes among more new and casual voters? Similar drops happened to Marin and especially Mirai, who also didn't manage to attract more support among the expanded voter base. On the other hand we see significant improvement for Reiko and, unsurprisingly, 7th gen members like Zion (from 4 votes to 17), Miyu (1 to 14) or Anju (1 to 11). An even newer addition to the group, Siyeon, already got 11 votes and it will be interesting to see how far she can go next time!
 
 ## Method 2
+
 
 ```{r, echo=FALSE}
 reactable(g2,
@@ -292,8 +295,7 @@ reactable(g2,
 .sort-header[aria-sort]:hover {
   background-color: #f4b630;
 }
-
-.rt-tr-group:hover {
+.my-row:hover {
   background-color: #FFE6E6;
 }
 ```

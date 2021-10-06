@@ -14,8 +14,8 @@ pygmentscodefences = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 [params]
-  sitename = "NMB member rankings"
-  faviconfile = "images/favicon.png"
+  sitename = "Stan Yuzu"
+  faviconfile = "favicon.png"
   highlightjs = true
   highlightjslanguages = ["r", "python", "stan"]
   uselatex = true
@@ -27,3 +27,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     [markup.goldmark.renderer]
       unsafe = true
 
+[[menu.primary]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.primary]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.primary]]
+    name = "Instagram"
+    url = "https://instagram.com/h.yuzuha_0112"
+    weight = 3
+[[menu.primary]]
+    name = "Twitter"
+    url = "https://twitter.com/yuzuha_hongo"
+    weight = 4
+    
