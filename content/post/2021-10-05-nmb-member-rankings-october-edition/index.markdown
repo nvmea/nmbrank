@@ -86,7 +86,7 @@ Haasa is another member dropping a lot compared to last time, even though her nu
   background-color: #f4b630;
 }
 
-.my-row:hover {
+.rt-tr-group:hover {
   background-color: #FFE6E6;
 }
 </style>
