@@ -1,4 +1,4 @@
-baseurl = "https://stanyuzu.netlify.app"
+baseurl = "https://stanyuzu.netlify.app/"
 title = "NMB rankings"
 author = "nvmea"
 canonifyurls = true
