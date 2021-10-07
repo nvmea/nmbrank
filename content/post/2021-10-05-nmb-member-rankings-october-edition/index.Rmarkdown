@@ -16,6 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(reactable)
 library(htmltools)
+library(hrbrthemes)
+library(ggthemes)
 nmbrank <- read_csv("nmbrank2.csv")
 prevrank <- read_csv("nmbrank.csv")
 
@@ -93,7 +95,7 @@ g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (April)"))
 
 ## Intro
 
-This is the second time we have asked NMB fans from all around the world at the NMB discord server to submit their NMB member rankings. The first time was at the beginning of April. It was completely unorganized and the whole "project" happened only because I had the silly idea of collecting all the rankings everyone had unsuspectingly posted. Back then, there were in total 16 entries - and I now also used the results of the April edition for an interesting comparison with the current October one.
+This is the second time we have asked NMB fans from all around the world at the [NMB discord server](https://discord.gg/94KW7KW) to submit their NMB member rankings. The first time was at the beginning of April. It was completely unorganized and the whole "project" happened only because I had the silly idea of collecting all the rankings everyone had unsuspectingly posted. Back then, there were in total 16 entries - and I now also used the results of the April edition for an interesting comparison with the current October one.
 
 Building on all the acquired experience, the second time around was naturally much more... of the same mess. However, as more and more entries started coming in, it made sense to reach out to every at least semi-active fan on the NMB discord server, asking them to submit their vote, in order to make this project TRULY REPRESENTATIVE. Incredibly, we ended up with 48 entries, thrice as many as last time!
 
@@ -176,9 +178,9 @@ reactable(g,
         AprilRank <- g$`Standings (April)`[index]
         AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
         color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
-          "#008000" }
+          "#00c800" }
         else if (is.na(value) == F && value > AprilRank) {
-          "#e00000" }
+          "#dc0000" }
          list(color = color)
          },
         cell = function(value, index) {
@@ -272,9 +274,9 @@ reactable(g2,
         AprilRank <- g2$`Standings (April)`[index]
         AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
         color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
-          "#008000" }
+          "#00c800" }
         else if (is.na(value) == F && value > AprilRank) {
-          "#e00000" }
+          "#dc0000" }
          list(color = color)
          },
         cell = function(value, index) {
@@ -306,19 +308,37 @@ reactable(g2,
 
 ### Differences between methods?
 
-As we can see, **Cocona** still comfortably takes the crown even with a different counting system. On the other hand, **Wakapon** dropped from second to fourth place, while **Mikana**, who was a relatively popular choice for an oshimen, climbed up to third and even almost took the second place. Funnily enough, using Method 2 the standings in the top 7 are almost identical to the April edition of Method 2, with **Yuzuha** ahead of **Rei**, once again thanks to several people picking her as their oshimen.
+**Cocona** still comfortably takes the crown even with a different counting system. On the other hand, **Wakapon** dropped from second to fourth place, while **Mikana**, who was a relatively popular choice for an oshimen, climbed up to third and even almost took the second place. Funnily enough, using Method 2 the standings in the top 7 are almost identical to the April edition of Method 2, with **Yuzuha** ahead of **Rei**, once again thanks to several people picking her as their oshimen.
 
 The 11-20 rankings are also about the same as when using Method 1. The minor differences are mostly explained by factors that I already mentioned while discussing Method 1 - girls with higher average ranking moved slightly up (**Nanaho**, **Chihhi**, **Fuuwa**) and girls with more votes but lower rankings (**Aika**, **Sadaharu**, **Shinshin**) moved down.
 
 As for the rest of the rankings, there are virtually no differences worth talking about.
 
-## Outro
+## Conclusion
 
-That's it for the October edition... OR IS IT? Well, it is from my side for now. I would like to thank all the participants (myself included!) because this could have obviously not happened without you! I am looking forward to everyone's opinions and suggestions regarding the format! Thanks again if you actually read all the way here!
+That's it for the October edition... OR IS IT? Well, it is from my side for now. I would like to thank all the participants (myself included!) because this could have obviously not happened without you! I am looking forward to everyone's opinions on the results and suggestions regarding the format! Thanks again if you actually read all the way here!
 
 <br>
 
 ## Appendix: Votes
+
+```{r, fig.width=8, fig.height=8, echo=FALSE}
+nmbrank$...1 <- 1:16
+
+h <- nmbrank %>% 
+  pivot_longer(cols = 2:length(nmbrank), values_to = "Member") %>% filter(is.na(Member) == F)
+
+h %>% count(Member, ...1) %>% 
+  ggplot(aes(...1, Member, fill = n)) + 
+  geom_tile(colour = "white") + 
+  geom_text(aes(label=n), colour = "white") +
+  labs(x = NULL ,y = NULL) + 
+  scale_y_discrete(expand=c(0,0)) + 
+  scale_x_continuous(expand=c(0,0), breaks = 1:16) + 
+  theme_ipsum_tw(grid = F) + 
+  scale_fill_continuous_tableau("Green-Gold", breaks = c(1:8)) +
+  theme(axis.text.x = element_text(vjust = -1))
+``` 
 
 ```{r, echo=FALSE}
 nmbrank$...1 <- 1:16
@@ -343,3 +363,4 @@ reactable(nmbrank,
   background-color: #FFE6E6;
 }
 ```
+
