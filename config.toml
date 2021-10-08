@@ -20,6 +20,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
   highlightjslanguages = ["r", "python", "stan"]
   uselatex = true
   progressively = false
+  description = "Hongo Yuzuha fanpage"
+  twitterAuthor = "@nvmea"
+  twitterSite = "@invalid_input"
 # commentsrepo = "user/repo"
 
 [markup]

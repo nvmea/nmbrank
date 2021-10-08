@@ -1,14 +1,14 @@
 ---
 title: "NMB member rankings October edition"
-author: "R package build"
+author: "nvmea"
 date: '2021-10-05'
 slug: []
 categories: []
 tags:
-- one tag
-- another tag
-meta_img: images/image.png
-description: Description for the page
+- nmb
+- stats
+twitterImg: "images/image.jpg"
+
 ---
 
 <script src="{{< blogdown/postref >}}index_files/core-js/shim.min.js"></script>
