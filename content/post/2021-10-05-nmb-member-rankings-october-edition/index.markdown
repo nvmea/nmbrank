@@ -7,7 +7,7 @@ categories: []
 tags:
 - nmb
 - stats
-twitterImg: "images/image.jpg"
+meta_img: "images/image.jpg"
 
 ---
 
