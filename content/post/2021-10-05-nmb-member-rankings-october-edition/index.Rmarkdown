@@ -332,12 +332,12 @@ h %>% count(Member, ...1) %>%
   ggplot(aes(...1, Member, fill = n)) + 
   geom_tile(colour = "white") + 
   geom_text(aes(label=n), colour = "white") +
-  labs(x = NULL ,y = NULL) + 
-  scale_y_discrete(expand=c(0,0)) + 
+  labs(x = NULL, y = NULL) + 
+  scale_y_discrete(expand=c(0,0), limits = rev) + 
   scale_x_continuous(expand=c(0,0), breaks = 1:16) + 
   theme_ipsum_tw(grid = F) + 
-  scale_fill_continuous_tableau("Green-Gold", breaks = c(1:8)) +
-  theme(axis.text.x = element_text(vjust = -1))
+  scale_fill_continuous_tableau("Green-Gold") +
+  theme(axis.text.x = element_text(vjust = -1), legend.position = "none")
 ``` 
 
 ```{r, echo=FALSE}
