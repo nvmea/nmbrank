@@ -224,10 +224,12 @@ hr {
 
 .content .meta-title a {
     text-decoration: none;
+    color: #333333;
 }
 
 .content .meta-title a:hover {
     text-decoration: none;
+    color: #333333;
 }
 
 .content .meta-date {
