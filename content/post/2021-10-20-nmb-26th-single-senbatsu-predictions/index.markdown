@@ -124,6 +124,11 @@ I honestly did not expect Yuumi would stay in senbatsu for Shidare Yanagi, but N
 
 There is no question Momone has been management’s favourite for some time. She very recently celebrated 3th anniversary of her first senbatsu appearance and released an amazing photobook. But her handshake sales have been poor and there is suddenly a genmate, Yuzuha, who has surpassed her in many aspects. That all would also mean that dropping Momone could be quite hard on her and who knows if she could come back from that. I don’t know, if they want her to experience the senbatsu drop too after such a long time. It’s a bit risky, but I could see it happening.
 
+![](https://stu48fan.com/nmb48/wp-content/uploads/2019/11/NMB48-M-NMB48-BIINMB48-20191119170050-520x245.jpg#style=centerme)
+<p style="text-align: center;">
+<i>Will we get to see this duo together in senbatsu?</i>
+</p>
+
 ### More D3 supremacy?
 
 ##### Maeda Reiko
