@@ -7,6 +7,7 @@ categories: []
 tags:
   - nmb
 meta_img: images/popcorn.png
+description: The fiercest of senbatsu battles
 ---
 
 <script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
