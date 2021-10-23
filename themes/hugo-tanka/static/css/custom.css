@@ -22,18 +22,18 @@ html {
 /* link */
 
 a {
-    color: #333333;
-    text-decoration: underline;
+    color: darkgoldenrod;
     background-color: transparent;
 }
 
 a:active, a:hover {
     outline-width: 0;
+    background-color: lemonchiffon;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #333333;
-    text-decoration: underline;
+    color: darkgoldenrod;
 }
 
 /* horizontal rule */
@@ -52,10 +52,11 @@ hr {
 
 .header a {
     text-decoration: none;
+    color: #333333;
 }
 
 .header a:hover {
-    text-decoration: underline;
+    background-color: lemonchiffon;
 }
 
 .header h1.name {
@@ -89,6 +90,7 @@ hr {
 
 .content .meta a {
     text-decoration: none;
+    color: #333333;
 }
 
 .content .middot:before {
@@ -225,7 +227,7 @@ hr {
 }
 
 .content .meta-title a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .content .meta-date {
