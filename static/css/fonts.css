@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'Myriad Pro';
     src: local('Myriad Pro Italic'), local('MyriadPro-It'),
-        url('fonts/MyriadPro Italic.ttf') format('truetype');
+        url('fonts/MyriadPro-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
