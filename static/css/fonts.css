@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Light'), local('MyriadPro-Light'),
+        url('fonts/MyriadPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Semibold Italic'), local('MyriadPro-SemiboldIt'),
+        url('fonts/MyriadPro-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Bold Italic'), local('MyriadPro-BoldIt'),
+        url('fonts/MyriadPro-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Italic'), local('MyriadPro-It'),
+        url('fonts/MyriadPro Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+        url('fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    src: local('Myriad Pro Condensed Italic'), local('MyriadPro-CondIt'),
+        url('fonts/MyriadPro-CondIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    src: local('Myriad Pro Condensed'), local('MyriadPro-Cond'),
+        url('fonts/MyriadPro-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold'),
+        url('fonts/MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    src: local('Myriad Pro Bold Condensed Italic'), local('MyriadPro-BoldCondIt'),
+        url('fonts/MyriadPro-BoldCondIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    src: local('Myriad Pro Bold Condensed'), local('MyriadPro-BoldCond'),
+        url('fonts/MyriadPro-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Bold'), local('MyriadPro-Bold'),
+        url('fonts/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Black Italic'), local('Charter-BlackItalic'),
+        url('fonts/Charter-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Black'), local('Charter-Black'),
+        url('fonts/Charter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Roman'), local('Charter-Roman'),
+        url('fonts/Charter-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter BT Bold Italic'), local('Charter-BoldItalic'),
+        url('fonts/Charter-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Bold'), local('Charter-Bold'),
+        url('fonts/Charter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Italic'), local('Charter-Italic'),
+        url('fonts/Charter-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: "Myriad Pro"; 
+    background-color: #fff;
+}
