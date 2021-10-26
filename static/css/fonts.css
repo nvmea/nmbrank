@@ -150,6 +150,114 @@
     font-style: italic;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Black Italic'), local('Vollkorn-BlackItalic'),
+        url('fonts/Vollkorn-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Black'), local('Vollkorn-Black'),
+        url('fonts/Vollkorn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn ExtraBold Italic'), local('Vollkorn-ExtraBoldItalic'),
+        url('fonts/Vollkorn-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Bold'), local('Vollkorn-Bold'),
+        url('fonts/Vollkorn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'),
+        url('fonts/Vollkorn-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn ExtraBold'), local('Vollkorn-ExtraBold'),
+        url('fonts/Vollkorn-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Italic'), local('Vollkorn-Italic'),
+        url('fonts/Vollkorn-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Medium'), local('Vollkorn-Medium'),
+        url('fonts/Vollkorn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Medium Italic'), local('Vollkorn-MediumItalic'),
+        url('fonts/Vollkorn-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Regular'), local('Vollkorn-Regular'),
+        url('fonts/Vollkorn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn SemiBold'), local('Vollkorn-SemiBold'),
+        url('fonts/Vollkorn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn SemiBold Italic'), local('Vollkorn-SemiBoldItalic'),
+        url('fonts/Vollkorn-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
 
 body {
     font-family: "Myriad Pro"; 
