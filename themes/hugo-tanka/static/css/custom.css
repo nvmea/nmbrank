@@ -49,6 +49,7 @@ hr {
 .header a {
     text-decoration: none;
     font-family: "Vollkorn";
+    font-feature-settings: "smcp" 1;
     color: #333333;
 }
 
@@ -228,7 +229,7 @@ hr {
 
 .content .meta-title a:hover {
     text-decoration: none;
-    color: #333333;
+    color: darkgoldenrod;
 }
 
 .content .meta-date {

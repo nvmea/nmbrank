@@ -8,6 +8,7 @@ tags:
 - nmb
 - stats
 meta_img: "images/image.jpg"
+description: All active NMB members ranked by the community
 
 ---
 

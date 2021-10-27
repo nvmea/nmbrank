@@ -224,8 +224,8 @@ digraph circles {
 
   node [shape = plaintext,
         fixedsize = false,
-        fontname = Helvetica,
-        fontsize = 20,
+        fontname = Futura,
+        fontsize = 18,
         style = filled,
         fillcolor = AntiqueWhite,
         width = 1.5]
