@@ -1,0 +1,214 @@
+---
+title: BUBKA September interview (with Rei)
+author: nvmea
+date: '2021-09-02'
+slug: []
+categories: []
+tags:
+  - nmb
+  - translation
+meta_img: images/yuzurei.jpg
+description: Interview after Yuzuha's second magazine cover with Rei
+---
+
+B = BUBKA, Y = Yuzuha, R = Rei
+
+**B: Today you had the chance to wear the historical clothes that Yamamoto Sayaka and Shiroma Miru had worn.**
+
+R+Y: We're glad!
+
+**B: In a previous (August) issue, when you two together with Shiroma-san were on the cover, Shiroma-san was saying: "They have to wear that!" So before her graduation, we held a succession ceremony like that.**
+
+R: I had the red one \[they are here referring to the feather boa that Sayanee, Miru (and redacted Suuchan) had worn before - along with the black mizugi\]; I did admire it and wanted to wear it at some point.
+
+Y: I had the blue one. It's the colour that my beloved Yamamoto Sayaka-san had worn so I'm delighted.
+
+**B: Sayanee wore it 8 years ago, so at that time you were still in primary school weren't you?**
+
+Y: Yes. I somehow remember seeing it. However I could have not imagined at that time that 8 years later I'd be doing gravure haha.
+
+**B: Talking about 8 years ago, at that time Jonishi-san's older sister (Jonishi Kei) was appearing in a legendary serial in our magazine called "Jonishi's Fitness Club". Was she saying anything about that at home?**
+
+R: Hm? No, not really.
+
+**B: Good to hear she wasn't complaining haha. Last time you appeared together with Shiroma-san. Now there's only two of you. How do you feel about that?**
+
+Y: This is the first time us two do gravure together so it was a fresh feeling and I had been looking forward to it.
+
+R: Last time I felt very grateful - thanks to the presence of my two senpais I had the chance to appear on the cover. But that even without Miru-san we could appear on the cover again is making me very happy and I hope we can build on that from now on as well.
+
+Y: When I saw the details of the shoot and there were the words "cover", I felt very thankful.
+
+**B: For Hongo-san it's now the fifth appearance in a row. You have really been pushed by us, haven't you haha.**
+
+Y: I'm grateful haha.
+
+**B: Since you aren't really mentioning it, I'll try to to say it myself, but you do realize the meaning of you two being entrusted with the cover even without Shiroma-san, right?**
+
+R: Miru-san is graduating and us two are going to succeed her, right.
+
+**B: For the July 2016 issue, we asked Shiroma-san to appear on the cover. It was around the time Watanabe Miyuki-san was graduating. We thought it's pretty much the same situation now.** <div class="row"> <div class="column"> <img src="https://images-na.ssl-images-amazon.com/images/I/51VseW9E2TL.jpg" alt="Miruki" style="width:100%"/> </div> <div class="column"> <img src="https://www.neowing.co.jp/pictures/l/16/27/NEOBK-1905072.jpg" alt="Miru" style="width:100%"/> </div>
+
+R: After Miru-san's graduation, all of first generation will have left. We have also become senpais already but up till now we have been running away from taking the lead. But now we cannot be saying things like that anymore. I want us to lead the group from now on, together in senbatsu with Yuzu-chan.
+
+Y: I almost never hear a kouhai talk like that so I'm very happy.
+
+**B: What place does gravure have for you two among all the various activities you do?**
+
+R: Excepting activities where I can interact with fans, gravure is the activity I can enjoy the most.
+
+Y: I think it's a place where I discovered a new myself. Because in middle school I declared that I absolutely wouldn't do gravure, fans ended up thinking like that as well. So I think they were surprised haha.
+
+**B: Do your twitter followers still keep increasing?** 
+
+Y: Yeah they do.
+
+R: Number of followers I care about, but lately what I care about even more is whether people actually properly read the tweets.
+
+**B: When I looked at the rankings a while ago, Jonishi-san had the 4th biggest number of followers.**
+
+R: Sure enough it does increase thanks to gravure. But it's not only that, but also opportunities like entering senbatsu, releasing a PB etc, which help the growth.
+
+**B: It after all depends on whether you can create more such opportunities, right. For Hongo-san, what is the next goal in the gravure world?**
+
+Y: Having a solo cover.
+
+**B: Saying it straight like that is great! Solo cover would be nice for sure; would you also like to release a PB in the future?**
+
+Y: Yes I would like to.
+
+**B: Asserting that as well is truly amazing. Have you noticed that your fan base would widen lately?**
+
+Y: Yes, since I started doing gravure, I have gained a lot of fans of Sakamichi groups.
+
+**B: I wanted to talk about that as well, it's definitely an effect of the magazine appearances. When fans of Sakamichi groups get the magazine, they notice the idols from other groups doing gravure and that's how they can discover you.**
+
+Y: People who take a look at the gravure might know the name of our group but not as far as knowing our names. I have also been gaining a lot of Korean fans so the fan base has definitely widened.
+
+R: For example when (Shibuya) Nagisa-san appears in a variety program she connects NMB48 with outer world. I would like to do the same through gravure.
+
+**B: What are your impressions of each other?**
+
+Y: Reichan especially hates losing. She was a quiet kid when she entered, but she would always give her best in everything. As the number of kouhais increased, she started fostering a sense of responsibility and we got to see her cool side.
+
+**B: "Cool" side?**
+
+Y: For example when a senpai misremembers the dance moves it's quite awkward to point that out isn't it. But at such times she just tells you.
+
+R: I can say it to girls from my team, but to address the group in general, that I cannot yet do. At those times I rely on my genmate Kojima Karin-chan and tell her: "The dance is all wrong, could you please tell everyone?"
+
+**B: Yeah that is quite difficult to do. What is Jonishi-san's impression of Hongo-san?**
+
+R: She is always friendly. Whenever she goes out with someone, whether it's kouhai or genmate, she always treats them. She's obsessed with treating others!
+
+Y: First time I hear that lol.
+
+R: She treated me to tapioca.
+
+Y: I do things like going to buy tapioca in breaks between lessons, but to go by myself feels lonely, so I invite kouhais to go with me and buy them one as well in recompense. That is also sort of an NMB tradition; for me the first time was when Ichikawa Miori-san bought me a cotton candy. Since then I felt I have no choice but to also treat my kouhais.
+
+**B: Does Jonishi-san treat kouhais as well?**
+
+R: Yes I do when we hang out.
+
+**B: I see the tradition is succeeding like that. From the perspective of senpai-kouhai relationship, what did you think when you heard Shiroma-san's graduation announcement?**
+
+Y: I thought: "It finally happened..." The announcement came at a time when members had gone through Nambattle developed sense of responsibility, so it felt like we had been challenged: "NMB48 will now rely on you remaining members".
+
+R: As for me, I had wanted her to stay a bit longer still, but after it happened I had the chance to do a lot of work together with Miru-san and I decided that in the remaining time I have to soak up as much as I can.
+
+**B: So what have you learned in these last few months?**
+
+R: Her ability to switch on her idol mode when she stands on stage is amazing. On stage she is more idol-like than anyone else, then in the backstage she is entertaining. That is something I'd like to inherit from her.
+
+**B: You feel very strongly about inheriting things.**
+
+R+Y: Yes we do.
+
+**B: It's the same for every group, that the first generation builds the base. But they keep gradually graduating until none of them remains. The group is still the same, but the members have changed. That time is now. To continue the same route, or exactly because the members have changed the group should also change appropriately, that is the question. Which one do you prefer?**
+
+Y: I want to show a bit of a different flavour. The image of NMB doing comedy is very strong, so I think it would also be interesting to do stuff like MV in uniforms and put our innocent side on display.
+
+R: I think it would be good to keep our image of doing comedy, synchronized dancing etc, while also trying to better convey everyone's individual charms to the outside world.
+
+**B: Do members talk about such things among each other?**
+
+Y: Not necessarily to that extent, but with my friends Umeyama Cocona-chan and Nakano Mirai-chan we do talk about things like the future of the group or "this member should do more like this". Because we cannot say it directly.
+
+R: I don't talk about such things with anyone. I ponder them at home.
+
+**B: Well since this is something that staff ought to do, it is alright if you don't think about it much. Especially in case of NMB48, you can already see the guidelines of "this is what NMB48 need right now" and also that that decision was taken fast.**
+
+Y: We certainly do have this sense of trust. Since I myself am the indecisive type, I am glad that things are being decided haha.
+
+R: Staff have been giving a lot of thought towards members and I am thankful that we keep steadily moving forward.
+
+**B: For example the Muchakuse stage produced by Kinoshita Momoka-san is also one of those things. Basically it was launched with the concept of uncovering new character, because "there have been too many 'nice girls' lately". How was it for Jonishi-san who joined that stage?**
+
+R: To have a chance to show a new myself is nice, and since recently we have stopped doing Yuri Gekijo, I think it's good we can continue this tradition as well.
+
+Y: I do not appear in the Muchakuse stage, but I was given the role of angel in the Yuri Gekijo back in the fifth anniversary concert. I have not appeared in it since, so I would like to do it soon haha!
+
+**B: I think it's an important trial. You can feel the message that it is ok to be more free.**
+
+R: Right. I want to be someone who is able to grab the spotlight. Like during lives to just romp about.
+
+Y: Yeah to be able to act freely during lives as well, right. There was a live where Kinoshita Momoka-san sung the Overture and I would like for that spirit to return back.
+
+**B: Right. It's fine to act freely, and also, as Shiroma-san said in the August issue, "the person who speaks up wins".**
+
+Y: My personality is such that I care about what other people think, so I would be considering, if I said "I want to enter senbatsu", what would people think. I have been able to write that in blog or twitter, but to say it out loud is something I have not been able to do in 6 years. I think it's after all very important to proactively appeal to people.
+
+**B: For sure. Time flies so fast after all.**
+
+Y: I entered the group when I was in my first year of middle school and six years have already gone by. You got to cherish every moment.
+
+R: For me it's also been more than 5 years already and although I kept thinking I am still a kouhai, the senpais have all been gradually leaving.
+
+Y: I am now 18 years old and I think it's a special age. You are kind of seen both as an adult and as a kid. I would love to stay 18 forever, but since I am already a middle rank member I want to become someone kouhais can rely on.
+
+**B: Is there someone who relies on you?**
+
+Y: My Kyunmart groupmate Satsuki Aika-chan. We are also the same age so I give her some advices.
+
+**B: It's still in the future, but let's talk about the next NMB48 single, which will not have any first generation members for the first time. I suppose there is going to be a lot of attention on how it pans out. How much are you already thinking about the next single?**
+
+Y: I don't know who is going to be the centre, but for me I absolutely want to at last enter senbatsu. That feeling has grown very strongly.
+
+**B: I think you can feel safe haha. It's not totally unreasonable that you and Jonishi-san will be the double centre.**
+
+Y: No way!
+
+R: In that case, we'll do mizugi?
+
+Y: A mizugi single? We haven't done that lately after all. I want it to come back!
+
+R: It feels worrying because Miru-san is leaving, but I want to show that NMB can still do it.
+
+**B: It's crucial to show that side at Shiroma senpai's graduation concert as well.**
+
+Y: Miru-san has been saying "I have high expectations of D2 girls" so I want to make sure I won't disappoint her!
+
+R: Miru-san taught me that "even if it's not in the centre, people with an aura will shine even on their own", so I want to go to the rehearsals with the ambition to shine whenever I stand.
+
+**B: Jonishi-san's feeling about the centre position is quite strong, isn't it. But In the past few years, Yoshida Akari-san or Shibuya Nagisa-san have proved it is possible to have a worth unrelated to one's position. Didn't such fact change your perspective about it?**
+
+R: I want to stand in the centre and that hasn't changed.
+
+Y: I think the centre position is important for sure, however for me I agree it is not everything. Like, if I can showcase myself in a different way that's fine too.
+
+**B: First of all we will be awaiting you showing that spirit to everyone at the graduation concert!**
+
+<style type="text/css">
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
