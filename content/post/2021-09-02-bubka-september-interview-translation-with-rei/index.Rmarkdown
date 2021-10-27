@@ -1,5 +1,5 @@
 ---
-title: BUBKA September interview (with Rei)
+title: BUBKA September interview translation (with Rei)
 author: nvmea
 date: '2021-09-02'
 slug: []
@@ -199,7 +199,7 @@ Y: I think the centre position is important for sure, however for me I agree it 
 
 **B: First of all we will be awaiting you showing that spirit to everyone at the graduation concert!**
 
-<style type="text/css">
+```{css echo = F}
 .column {
   float: left;
   width: 50%;
@@ -211,4 +211,4 @@ Y: I think the centre position is important for sure, however for me I agree it 
   clear: both;
   display: table;
 }
-</style>
+```

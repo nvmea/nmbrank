@@ -1,5 +1,5 @@
 ---
-title: FLASH September interview (with Wakapon)
+title: FLASH September interview translation (with Wakapon)
 author: nvmea
 date: '2021-09-10'
 slug: []
