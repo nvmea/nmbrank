@@ -23,6 +23,8 @@ R: I had the red one \[they are here referring to the feather boa that Sayanee, 
 
 Y: I had the blue one. It's the colour that my beloved Yamamoto Sayaka-san had worn so I'm delighted.
 
+<div class="row"> <div class="column"> <img src="https://images-na.ssl-images-amazon.com/images/I/71-fPIoMl9L.jpg" alt="Saya" style="width:100%"/> </div> <div class="column"> <img src="https://img.hmv.co.jp/image/jacket/800/0000111/5/5/559.jpg" alt="Suu" style="width:90%"/> </div>
+
 **B: Sayanee wore it 8 years ago, so at that time you were still in primary school weren't you?**
 
 Y: Yes. I somehow remember seeing it. However I could have not imagined at that time that 8 years later I'd be doing gravure haha.
@@ -30,6 +32,8 @@ Y: Yes. I somehow remember seeing it. However I could have not imagined at that 
 **B: Talking about 8 years ago, at that time Jonishi-san's older sister (Jonishi Kei) was appearing in a legendary serial in our magazine called "Jonishi's Fitness Club". Was she saying anything about that at home?**
 
 R: Hm? No, not really.
+
+<div align = "center"><img src = "http://i.imgur.com/meahY3T.jpg" width=700></div>
 
 **B: Good to hear she wasn't complaining haha. Last time you appeared together with Shiroma-san. Now there's only two of you. How do you feel about that?**
 
@@ -47,7 +51,8 @@ Y: I'm grateful haha.
 
 R: Miru-san is graduating and us two are going to succeed her, right.
 
-**B: For the July 2016 issue, we asked Shiroma-san to appear on the cover. It was around the time Watanabe Miyuki-san was graduating. We thought it's pretty much the same situation now.** <div class="row"> <div class="column"> <img src="https://images-na.ssl-images-amazon.com/images/I/51VseW9E2TL.jpg" alt="Miruki" style="width:100%"/> </div> <div class="column"> <img src="https://www.neowing.co.jp/pictures/l/16/27/NEOBK-1905072.jpg" alt="Miru" style="width:100%"/> </div>
+**B: For the July 2016 issue, we asked Shiroma-san to appear on the cover. It was around the time Watanabe Miyuki-san was graduating. We thought it's pretty much the same situation now.** 
+<div class="row"> <div class="column"> <img src="https://images-na.ssl-images-amazon.com/images/I/51VseW9E2TL.jpg" alt="Miruki" style="width:100%"/> </div> <div class="column"> <img src="https://www.neowing.co.jp/pictures/l/16/27/NEOBK-1905072.jpg" alt="Miru" style="width:100%"/> </div>
 
 R: After Miru-san's graduation, all of first generation will have left. We have also become senpais already but up till now we have been running away from taking the lead. But now we cannot be saying things like that anymore. I want us to lead the group from now on, together in senbatsu with Yuzu-chan.
 

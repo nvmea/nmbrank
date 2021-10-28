@@ -165,7 +165,7 @@ Y: Yeah I can't wait to see the reaction haha.
 
 *Born 2013/01/12 in Osaka. Member of NMB48.*
 
-*桃栗三年柚六年 - a play on the [桃栗三年柿八年](https://jisho.org/search/桃栗三年柿八年) proverb, which means "planted peach and chestnut seeds take three years (to bear fruit), persimmons take eight" in literal sense and "it often takes time for one's actions to bear fruit" metaphorically - in this version they changed persimmon for yuzu and 8 years to 6 (her time in the group).*
+*桃栗三年柚六年 --- a play on the [桃栗三年柿八年](https://jisho.org/search/桃栗三年柿八年) proverb, which means "planted peach and chestnut seeds take three years (to bear fruit), persimmons take eight" in literal sense and "it often takes time for one's actions to bear fruit" metaphorically --- in this version they changed persimmon for yuzu and 8 years to 6 (her time in the group).*
 
 *After she joined NMB48 Team N in D2 in 2015, she keeps protecting the group's tradition with her overflowing Namba Ai.*
 

@@ -58,6 +58,10 @@ M: Yeah, because I have known her since she was little, so when we did the shoot
 
 Y: I was 12 years old, I had just graduated from primary school.
 
+{{< youtube adir80qRhlk >}}
+
+<br>
+
 M: Woow, yabai
 
 **B: I wonder how your fans feel about this.**
@@ -102,7 +106,7 @@ M: That's because you're still in your growth period aren't you! You'll still gr
 
 Y: hahaha
 
-**B: Haha, so it's still work in progress?... There have been many members who have become popular thanks to gravure - would you say there are quite a few girls who would like to try doing gravure if they got a chance?**
+**B: Haha, so it's still work in progress?... There have been many members who have become popular thanks to gravure --- would you say there are quite a few girls who would like to try doing gravure if they got a chance?**
 
 M: I think there are. For me personally there are many members I'd like to see doing gravure. So I've been telling them: "You gotta do gravure!"
 
@@ -123,6 +127,10 @@ M: Right, she's a beauty. How about Kohatan?
 R: 7th gen Orisaka Koharu-chan
 
 M: She's so kawaii. I want to see gravure of her nicely plump body.
+<div align = "center"><img src = "https://contents.oricon.co.jp/cdn-cgi/image/width=1500,quality=100,format=auto/upimg/news/20210621/2197418_202106210346296001624262437e.jpg" height = 500></div>
+<div align = "center"><i>Miru actually produced a gravure shoot with Wakana and Koharu for Weekly Playboy</i></div>
+
+<br>
 
 **B: I see there's still many secret weapons in NMB. Why is it that NMB is so strong in gravure?**
 
@@ -138,7 +146,7 @@ M: That's true actually lol. But yeah, because even Sayanee, who had been leadin
 
 **B: After all we also had a feature in BUBKA where that Yamamoto Sayaka-san passed the position of gravure queen to Shiroma-san.**
 
-M: Ah yeah we did that! In read and black mizugi. So nostalgic...
+M: Ah yeah we did that! In red and black mizugi. So nostalgic...
 
 **B: The one who is going to sit on the throne after Shiroma-san is...**
 
@@ -180,7 +188,7 @@ M: Yuzu's looks are very cute with the younger sister aura, but deep inside she'
 
 Y: Hehe, is that so?
 
-M: She is able to approach her senpais and tell them they're wrong and to express her own opinions - truly strong-minded.
+M: She is able to approach her senpais and tell them they're wrong and to express her own opinions --- truly strong-minded.
 
 Y: Back then among D2 I was one of the younger ones, so I acted like a child in front of many senpais. But as time went on, the number of kouhais and members younger than me increased. I realized I need to stop clinging to senpais and stick to my own will and became a reliable presence for the kouhais.
 
@@ -200,7 +208,7 @@ M: Nah, more like Keicchi types.
 
 R: I wonder if that is okay lol.
 
-M: I don't mean it in a bad way. They are quiet! They just do their lessons quietly and properly - there is a lot of this type of girls.
+M: I don't mean it in a bad way. They are quiet! They just do their lessons quietly and properly --- there is a lot of this type of girls.
 
 **B: Lately I feel like there is a trend that girls who work hard earnestly in theatre stages and other daily activities are rather highly rated.**
 
