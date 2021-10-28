@@ -33,7 +33,7 @@ Y: Yes. I somehow remember seeing it. However I could have not imagined at that 
 
 R: Hm? No, not really.
 
-<div align = "center"><img src = "http://i.imgur.com/meahY3T.jpg" width=700></div>
+<div align = "center"><img src = "https://i.imgur.com/meahY3T.jpg" width=700></div>
 
 **B: Good to hear she wasn't complaining haha. Last time you appeared together with Shiroma-san. Now there's only two of you. How do you feel about that?**
 
