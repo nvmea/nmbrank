@@ -45,7 +45,7 @@ A few more technical notes:
 
 <br>
 
-I will let the numbers speak by themselves. The only question I want to ask is — by what metrics is Shinshin supposed to be only the third choice out of 6th gen?!
+I will let the numbers speak for themselves. The only question I want to ask is — by what metrics is Shinshin supposed to be only the third choice out of 6th gen?!
 
 <style type="text/css">
 
