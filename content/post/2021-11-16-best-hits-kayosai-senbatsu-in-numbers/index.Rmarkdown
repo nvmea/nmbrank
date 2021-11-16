@@ -1,0 +1,93 @@
+---
+title: Best Hits Kayosai senbatsu in numbers
+author: nvmea
+date: '2021-11-16'
+slug: []
+categories: []
+tags:
+  - nmb
+  - stats
+meta_img: images/kay.png
+description: Yuzuha's most popular Twitter post is not a gravure offshot anymore.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(reactable)
+library(htmltools)
+
+```
+
+In this short post I look back on the recent NMB performance Best Hits Kayosai - from the perspective of Twitter and Instagram performance, because that's we are about here (and because I was asked to do it)!
+
+I looked at three indicators. All of the members posted on Twitter and Instagram after the performance. I compiled the number of likes (plus retweets) of these posts (if anyone posted more, I picked their best performing post). Then, late at night, the NMB official IG account posted pictures of all the senbatsu members in separate posts and at more or less the same time, which of course offered a great chance for comparison as well.
+
+A few more technical notes:
+
+-   I compiled all of these yesterday (November 15th), so there might have been some changes since then, but the posts are already "mature" enough that any changes should be marginal and not changing the overall picture.
+
+-   There are no data for Cocona's and Mikana's personal IG, because the former hides the number of likes and the latter - hasn't posted about the event at all!
+
+-   Wakapon's performance in Official IG is likely slightly boosted by the fact she was posted as the first one, which usually helps (I am not sure if Mikana being posted as the last one has the same effect).
+
+<br>
+
+##### Number of likes (+ retweets)
+
+*Data from November 15th*
+
+<div align="center">
+```{r, echo = F}
+besthits <- read_csv("besthits.csv", show_col_types = FALSE) %>% arrange(desc(Official_IG), desc(Personal_IG), desc(Twitter))
+orange_pal <- function(x) rgb(colorRamp(c("#F7FCB9", "#ADDD8E"))(x), maxColorValue = 255)
+
+pal <- function(column, data = besthits, ...) {
+  colDef(...,
+      style = function(value) {
+        if (value == 0) {
+          list(color = "#aaa")
+        } else {
+          normalized <- (value - min(data[[column]])) / (max(data[[column]]) - min(data[[column]]))
+          color <- orange_pal(normalized)
+          list(background = color)
+          }
+        }
+      )
+    }
+
+reactable(
+  besthits,
+  columns = list(
+    Member = colDef(minWidth = 200),
+    Official_IG = pal(column = "Official_IG", name = "Official IG", minWidth = 150),
+    Personal_IG = pal(column = "Personal_IG", name = "Personal IG", minWidth = 150),
+    Twitter = pal(column = "Twitter", minWidth = 150)),
+  showSortIcon = FALSE,
+  borderless = T,
+  defaultPageSize = 15,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(headerClass = "bar-sort-header"),
+  fullWidth = F
+)
+```
+</div>
+
+<br>
+
+I will let the numbers speak by themselves. The only question I want to ask is --- by what metrics is Shinshin supposed to be only the third choice out of 6th gen?!
+
+
+```{css, echo = F}
+
+.bar-sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+```

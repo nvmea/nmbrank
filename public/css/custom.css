@@ -1,10 +1,6 @@
 /* Global styles */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-feature-settings: "liga", "kern";
-    background-color: #fff;
-}
+
 
 /* Fix jumping scrollbar when switching to long pages */
 
@@ -22,18 +18,18 @@ html {
 /* link */
 
 a {
-    color: #ffe4cc;
-    text-decoration: underline;
+    color: darkgoldenrod;
     background-color: transparent;
 }
 
 a:active, a:hover {
     outline-width: 0;
+    background-color: lemonchiffon;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #333333;
-    text-decoration: underline;
+    color: darkgoldenrod;
 }
 
 /* horizontal rule */
@@ -52,10 +48,14 @@ hr {
 
 .header a {
     text-decoration: none;
+    font-family: "Vollkorn";
+    font-feature-settings: "smcp" 1;
+    color: #333333;
 }
 
 .header a:hover {
-    text-decoration: underline;
+    background-color: lemonchiffon;
+    color: darkgoldenrod;
 }
 
 .header h1.name {
@@ -76,6 +76,7 @@ hr {
 
 .content h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+    font-family: "Charter";
     color: #333333;
     margin-bottom: 1rem;
 }
@@ -89,6 +90,7 @@ hr {
 
 .content .meta a {
     text-decoration: none;
+    color: #333333;
 }
 
 .content .middot:before {
@@ -222,10 +224,12 @@ hr {
 
 .content .meta-title a {
     text-decoration: none;
+    color: #333333;
 }
 
 .content .meta-title a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: darkgoldenrod;
 }
 
 .content .meta-date {

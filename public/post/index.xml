@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on NMB rankings</title>
+    <title>Posts on Stan Yuzu</title>
     <link>https://stanyuzu.netlify.app/post/</link>
-    <description>Recent content in Posts on NMB rankings</description>
+    <description>Recent content in Posts on Stan Yuzu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://stanyuzu.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://stanyuzu.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Hits Kayosai senbatsu in numbers</title>
+      <link>https://stanyuzu.netlify.app/post/2021-11-16-best-hits-kayosai-senbatsu-in-numbers/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-11-16-best-hits-kayosai-senbatsu-in-numbers/</guid>
+      <description>In this short post I look back on the recent NMB performance Best Hits Kayosai - from the perspective of Twitter and Instagram performance, because that’s we are about here (and because I was asked to do it)!
+I looked at three indicators. All of the members posted on Twitter and Instagram after the performance. I compiled the number of likes (plus retweets) of these posts (if anyone posted more, I picked their best performing post).</description>
+    </item>
+    
+    <item>
+      <title>Prediction of a prediction</title>
+      <link>https://stanyuzu.netlify.app/post/2021-11-06-prediction-of-a-prediction/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-11-06-prediction-of-a-prediction/</guid>
+      <description>We got played by the NMB management. The highly expected single announcement did happen, but the senbatsu announcement did not &amp;mdash; unsurprisingly, since the single will be released only sometime next year. It&amp;rsquo;s of course not really possible to look back and evaluate the accuracy of my prediction, so I decided to at least try to look forward and evaluate how the &amp;ldquo;postponement&amp;rdquo; might change the prediction.
+Does anything even change?</description>
+    </item>
+    
+    <item>
+      <title>NMB 26th single senbatsu predictions</title>
+      <link>https://stanyuzu.netlify.app/post/2021-10-20-nmb-26th-single-senbatsu-predictions/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-10-20-nmb-26th-single-senbatsu-predictions/</guid>
+      <description>The announcement of NMB’s 26th single is imminent and it is therefore time for the most fun of activities an idol fan can enjoy — senbatsu predictions!
+In this article, I try to look at all the members who I feel have at least some chance of entering senbatsu. I operate with the assumption that the senbatsu will have 16 members. It might always be more (after all, my final analysis would prefer an 18 member senbatsu), although with the current number of members it doesn’t seem necessary.</description>
+    </item>
+    
     <item>
       <title>NMB member rankings October edition</title>
       <link>https://stanyuzu.netlify.app/post/2021-10-05-nmb-member-rankings-october-edition/</link>
@@ -14,6 +44,55 @@
       
       <guid>https://stanyuzu.netlify.app/post/2021-10-05-nmb-member-rankings-october-edition/</guid>
       <description>Intro This is the second time we have asked NMB fans from all around the world at the NMB discord server to submit their NMB member rankings. The first time was at the beginning of April. It was completely unorganized and the whole “project” happened only because I had the silly idea of collecting all the rankings everyone had unsuspectingly posted.</description>
+    </item>
+    
+    <item>
+      <title>FLASH September interview translation (with Wakapon)</title>
+      <link>https://stanyuzu.netlify.app/post/2021-09-10-flash-september-interview-translation-with-wakapon/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-09-10-flash-september-interview-translation-with-wakapon/</guid>
+      <description>F = FLASH, W = Wakapon, Y = Yuzuha
+F: Even though you two had been doing a lot of gravure, today&amp;rsquo;s pair shoot was the first time for you, which is kind of surprising.
+Y: We had had surprisingly few interactions until now, so to see Wakapon could do such expressions allowed me to discover a new side of her and that was a lot of fun.
+W: I enjoyed it as well, just singing together and doing the shoot and so on all in high spirits.</description>
+    </item>
+    
+    <item>
+      <title>BUBKA September interview translation (with Rei)</title>
+      <link>https://stanyuzu.netlify.app/post/2021-09-02-bubka-september-interview-translation-with-rei/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-09-02-bubka-september-interview-translation-with-rei/</guid>
+      <description>B = BUBKA, Y = Yuzuha, R = Rei
+B: Today you had the chance to wear the historical clothes that Yamamoto Sayaka and Shiroma Miru had worn.
+R+Y: We&amp;rsquo;re glad!
+B: In a previous (August) issue, when you two together with Shiroma-san were on the cover, Shiroma-san was saying: &amp;ldquo;They have to wear that!&amp;rdquo; So before her graduation, we held a succession ceremony like that.
+R: I had the red one [they are here referring to the feather boa that Sayanee, Miru (and redacted Suuchan) had worn before - along with the black mizugi]; I did admire it and wanted to wear it at some point.</description>
+    </item>
+    
+    <item>
+      <title>BUBKA July interview translation (with Miru and Rei)</title>
+      <link>https://stanyuzu.netlify.app/post/2021-06-30-bubka-july-interview-translation-with-miru-and-rei/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-06-30-bubka-july-interview-translation-with-miru-and-rei/</guid>
+      <description>B = BUBKA, M = Miru, Y = Yuzuha, R = Rei
+B: The BUBKA release that featured Hongo-san&amp;rsquo;s gravure was well-received, with a flood of preorders coming in and news about bookstores selling out coming in one after another.
+M: Wooow!
+Y: Thank you!
+M: I had wondered since a long time ago when Yuzu&amp;rsquo;s boobs would see the light of day.
+Y: haha
+M: I would be like touching you when we were changing clothes in the dressing room, right.</description>
+    </item>
+    
+    <item>
+      <title>BUBKA May interview translation</title>
+      <link>https://stanyuzu.netlify.app/post/2021-04-27-bubka-may-interview-translation/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanyuzu.netlify.app/post/2021-04-27-bubka-may-interview-translation/</guid>
+      <description>B = BUBKA, Y = Yuzuha B: Hongo-san&amp;rsquo;s gravure was something like a long-awaited wish. We actually made the offer some time ago already. Y: Oh! Thank you very much! B: And the words &amp;ldquo;long-awaited&amp;rdquo; were never as appropriate as this time. Y: Haha no way. B: At the end of the last year, Mizuta Shiori chose top 5 members whose gravure she wanted to see and you were among</description>
     </item>
     
   </channel>
