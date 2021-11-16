@@ -7,7 +7,7 @@ categories: []
 tags:
   - nmb
   - stats
-meta_img: images/kay.jpeg
+meta_img: images/kay.jpg
 description: Yuzuha's most popular Twitter post is not a gravure offshot anymore.
 ---
 
@@ -40,7 +40,7 @@ A few more technical notes:
 <div align="center">
 ```{r, echo = F}
 besthits <- read_csv("besthits.csv", show_col_types = FALSE) %>% arrange(desc(Official_IG), desc(Personal_IG), desc(Twitter))
-orange_pal <- function(x) rgb(colorRamp(c("#F7FCB9", "#ADDD8E"))(x), maxColorValue = 255)
+orange_pal <- function(x) rgb(colorRamp(c("#F7FCB9", "#8eb475"))(x), maxColorValue = 255)
 
 pal <- function(column, data = besthits, ...) {
   colDef(...,
@@ -60,9 +60,9 @@ reactable(
   besthits,
   columns = list(
     Member = colDef(minWidth = 200),
-    Official_IG = pal(column = "Official_IG", name = "Official IG", minWidth = 150),
-    Personal_IG = pal(column = "Personal_IG", name = "Personal IG", minWidth = 150),
-    Twitter = pal(column = "Twitter", minWidth = 150)),
+    Official_IG = pal(column = "Official_IG", name = "Official IG", minWidth = 120),
+    Personal_IG = pal(column = "Personal_IG", name = "Personal IG", minWidth = 120),
+    Twitter = pal(column = "Twitter", minWidth = 120)),
   showSortIcon = FALSE,
   borderless = T,
   defaultPageSize = 15,
