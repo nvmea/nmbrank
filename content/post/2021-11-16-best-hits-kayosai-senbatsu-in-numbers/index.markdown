@@ -7,7 +7,7 @@ categories: []
 tags:
   - nmb
   - stats
-meta_img: images/kay.png
+meta_img: images/kay.jpeg
 description: Yuzuha's most popular Twitter post is not a gravure offshot anymore.
 ---
 
