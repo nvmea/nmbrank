@@ -255,49 +255,27 @@ green_pal <- function(x) rgb(colorRamp(c("#F7FCB9", "#ADDD8E"))(x), maxColorValu
 orange_pal <- function(x) rgb(colorRamp(c("#ffe4cc", "#ff9500"))(x), maxColorValue = 255)
 gray_pal <- function(x) rgb(colorRamp(c("#f2f2f2", "#BCBCBC"))(x), maxColorValue = 255)
 
+pal <- function(column, data = nmbsenbatsu, ...) {
+  colDef(...,
+      style = function(value) {
+        if (value == 0) {
+          list(color = "#aaa")
+        } else {
+          normalized <- (value - min(data[[column]])) / (max(data[[column]]) - min(data[[column]]))
+          color <- orange_pal(normalized)
+          list(background = color)
+          }
+        }
+      )
+    }
 
 reactable(
   nmbsenbatsu,
   columns = list(
     Member = colDef(minWidth = 200),
-    Total = colDef(
-      maxWidth = 100,
-      style = function(value) {
-        if (value == 0) {
-          list(color = "#aaa")
-        } else {
-          normalized <- (value - min(nmbsenbatsu$Total)) / (max(nmbsenbatsu$Total) - min(nmbsenbatsu$Total))
-          color <- orange_pal(normalized)
-          list(background = color)
-        }
-      }
-    ),
-    Streak = colDef(
-      maxWidth = 100,
-      style = function(value) {
-        if (value == 0) {
-          list(color = "#aaa")
-        } else {
-          normalized <- (value - min(nmbsenbatsu$Streak)) / (max(nmbsenbatsu$Streak) - min(nmbsenbatsu$Streak))
-          color <- orange_pal(normalized)
-          list(background = color)
-        }
-      }
-    ),
-    Prediction = colDef(
-      minWidth = 110,
-      format = colFormat(percent = T),
-      style = function(value) {
-        if (value == 0) {
-          list(color = "#aaa")
-        } else {
-          normalized <- (value - min(nmbsenbatsu$Prediction)) / (max(nmbsenbatsu$Prediction) - min(nmbsenbatsu$Prediction))
-          color <- orange_pal(normalized)
-          list(background = color)
-        }
-      }
-    )
-  ),
+    Total = pal("Total", maxWidth = 100),
+    Streak = pal("Streak", maxWidth = 100),
+    Prediction = pal("Prediction", minWidth = 110)),
   fullWidth = F,
   defaultPageSize = 50,
   showSortIcon = FALSE,
