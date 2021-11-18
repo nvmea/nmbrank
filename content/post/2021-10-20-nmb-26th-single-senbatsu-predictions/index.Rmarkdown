@@ -275,7 +275,7 @@ reactable(
     Member = colDef(minWidth = 200),
     Total = pal("Total", maxWidth = 100),
     Streak = pal("Streak", maxWidth = 100),
-    Prediction = pal("Prediction", minWidth = 110)),
+    Prediction = pal("Prediction", minWidth = 110, format = colFormat(percent = T))),
   fullWidth = F,
   defaultPageSize = 50,
   showSortIcon = FALSE,
