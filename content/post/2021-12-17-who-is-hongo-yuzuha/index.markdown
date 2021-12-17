@@ -21,7 +21,7 @@ That is the title of an interesting article that was published yesterday (Decemb
 
 <br>
 
-### Getting her big break after gravure debut and already raising a claim to the title of "New Generation Gravure Queen"
+### Getting her big break after gravure debut, already being called the "New Generation Gravure Queen"
 
 The one who is currently getting her break and being lauded as the Next Generation Variety Queen is Shibuya Nagisa. She has been thought highly of by comedians from Kansai already for a long time, but in 2021 she managed to break into the national scene with her natural talk and oogiri abilities. She has now her own show at Asahi TV, even if it is in a late night slot, and has even started to be called the new Sashihara Rino.
 
