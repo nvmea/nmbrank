@@ -1,0 +1,92 @@
+---
+title: YNN 24H Line Distribution
+author: nvmea
+date: '2021-12-26'
+slug: []
+categories: []
+tags:
+  - nmb
+meta_img: 24eh.png
+description: Who got robbed and why Yuzu?
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(reactable)
+library(htmltools)
+
+```
+
+This is a very approximate YNN 24H appearance time ranking, based on a post in [this matome](http://nmb48-mtm.com/archives/56346098.html), including Kani Game, not including the second Niconico commentary stream, and with several opinionated fixes:
+
+-   In Kani Game I counted roughly each member's time before their elimination (so Misaki would get 2 hours while Momone 10 minutes).
+
+-   I went by the times mentioned in the matome post, which of course does not take breaks into consideration. I did not do anything regarding this, because it would be too much (useless) work. The breaks weren't that long this year, also you do have members showing up during the breaks etc.
+
+-   The original post has Mighty Girlfriend VTR split in 3 "corners" with total time about 1 hour. I cut that to 2 corners (because they weren't really corners, but also they were very much spread over time, so probably everyone saw at least 2 of them, which is a very good promo) and I cut a lot of time as well because each part was like 5 minutes at most (though they played the first two twice).
+
+-   In several corners the line-up wasn't the same from start to finish:
+
+    -   In opening corner I counted Karen, Rena and Shinshin for 5 minutes only (was even fewer in reality).
+
+    -   In karaoke I gave every participant 30 minutes and MCs got full time. Both are generous to be honest, but in the end all participants still got like 5 minutes only for themselves which is valuable. Also they were all there for the last 10 minutes or so. Sure enough, some of them even sang more songs... but this was as much as I could bother approximating.
+
+    -   In Aanon fiction I gave every participant 15 minutes. It was once again much shorter in reality and there were differences between members too, but it was once again dedicated 1-on-1 time with a lot of talking.
+    
+    -   In Home Alone I gave Anju 30 minutes. Again --- it was fewer, but she was prominent.
+
+    -   In Peropero and We Want Momone to be Happy I gave the "cosplay participants" like 20 minutes. It's once again just approximation, because usually they get their 5 minutes and then they just stand there in the corner for the rest of the corner.
+
+By the way --- it's completely possible that I totally miscalculated something when doing those manual corrections, so if you think something seems wrong then it's quite possibly indeed wrong so please let me know.
+
+<div align="center">
+
+```{r, echo=F}
+ynn <- read_csv("ynn4.csv", show_col_types = F) %>% arrange(desc(Time), desc(Corners))
+orange_pal <- function(x) rgb(colorRamp(c("#F7FCB9", "#8eb475"))(x), maxColorValue = 255)
+
+pal <- function(column, data = ynn, ...) {
+  colDef(...,
+      style = function(value) {
+        if (value == 0) {
+          list(color = "#aaa")
+        } else {
+          normalized <- (value - min(data[[column]])) / (max(data[[column]]) - min(data[[column]]))
+          color <- orange_pal(normalized)
+          list(background = color)
+          }
+        }
+      )
+    }
+
+
+reactable(ynn,
+  columns = list(
+    Member = colDef(minWidth = 200),
+    Time = pal(column = "Time", name = "Time (minutes)", minWidth = 150),
+    Corners = pal(column = "Corners", minWidth = 150)),
+  showSortIcon = FALSE,
+  borderless = T,
+  defaultPageSize = 40,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(headerClass = "bar-sort-header"),
+  fullWidth = F
+)
+```
+
+</div>
+
+```{css, echo = F}
+
+.bar-sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+```
