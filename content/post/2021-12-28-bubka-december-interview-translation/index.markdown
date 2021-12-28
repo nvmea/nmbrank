@@ -7,7 +7,7 @@ categories: []
 tags:
   - nmb
   - translation
-meta_img: bubkadec.png
+meta_img: images/bubkadec.png
 description: Yuzu's glorious return to BUBKA with a solo cover. (Also, the editors really like talking about baseball, don't they.)
 ---
 

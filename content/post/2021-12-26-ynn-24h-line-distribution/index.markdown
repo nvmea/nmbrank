@@ -6,7 +6,7 @@ slug: []
 categories: []
 tags:
   - nmb
-meta_img: 24eh.png
+meta_img: images/24eh.png
 description: Who got robbed and why Yuzu?
 ---
 
