@@ -100,7 +100,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **09/02/2022 --- BOMB (with Jōnishi Rei)**
 
-22/02/2022 --- DOLCE
+**22/02/2022 --- DOLCE**
 
 **22/02/2022 --- Young Champion \[2\]**
 
