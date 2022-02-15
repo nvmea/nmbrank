@@ -46,7 +46,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2021-09-10-flash-september-interview-translation-with-wakapon/)
 
-**21/09/2021 --- Monthly Young Magazine**
+**21/09/2021 --- Monthly Young Magazine [1]**
 
 28/09/2021 --- Young Champion \[1\]
 
@@ -100,8 +100,10 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **09/02/2022 --- BOMB (with Jōnishi Rei)**
 
+**18/02/2022 --- Monthly Young Magazine [2]**
+
 **22/02/2022 --- DOLCE**
 
 **22/02/2022 --- Young Champion \[2\]**
 
-**24/02/2022 --- FLASH Special \[3\]**
+**24/02/2022 --- FLASH Special (with Jōnishi Rei) \[3\]**
