@@ -42,7 +42,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2021-09-02-bubka-september-interview-translation-with-rei/)
 
-09/09/2021 --- FLASH Special (with Abe Wakana) \[1\]
+10/09/2021 --- FLASH Special (with Abe Wakana) \[1\]
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2021-09-10-flash-september-interview-translation-with-wakapon/)
 
@@ -94,6 +94,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/)
 
+31/01/2022 --- BUBKA \[8\]
+
 07/02/2022 --- Weekly Playboy \[3\]
 
 **07/02/2022 --- Weekly Young Magazine (with Wada Miyu and Jōnishi Rei) \[5\]**
@@ -107,3 +109,5 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 **22/02/2022 --- Young Champion \[2\]**
 
 **24/02/2022 --- FLASH Special (with Jōnishi Rei) \[3\]**
+
+28/02/2022 --- BUBKA \[9\]
