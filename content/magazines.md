@@ -84,7 +84,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **08/01/2022 --- Weekly Young Magazine \[4\]**
 
-13/01/2022 --- Young Champion DVD
+13/01/2022 --- Young Champion DVD [1]
 
 20/01/2022 --- Weekly Shōnen Champion
 
@@ -111,3 +111,5 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 **24/02/2022 --- FLASH Special (with Jōnishi Rei) \[3\]**
 
 28/02/2022 --- BUBKA \[9\]
+
+08/03/2022 --- Young Champion DVD [2]
