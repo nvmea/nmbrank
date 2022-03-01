@@ -113,3 +113,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 28/02/2022 --- BUBKA \[9\]
 
 08/03/2022 --- Young Champion DVD [2]
+
+08/03/2022 --- FLASH [3]
+
+**05/04/2022 --- Manga Action (with Jōnishi Rei)**
