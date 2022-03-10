@@ -116,4 +116,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 08/03/2022 --- FLASH [3]
 
+**15/03/2022 --- EX Taishu**
+
 **05/04/2022 --- Manga Action (with Jōnishi Rei)**
+
+05/04/2022 --- UteenB
