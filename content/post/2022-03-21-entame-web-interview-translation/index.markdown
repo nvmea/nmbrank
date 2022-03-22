@@ -7,7 +7,7 @@ categories: []
 tags:
   - nmb
   - translation
-meta_img: content/post/2022-03-21-entame-web-interview-translation/tame1.jpg
+meta_img: images/tame1.jpg
 description: How Yuzu made her dad cry.
 ---
 
