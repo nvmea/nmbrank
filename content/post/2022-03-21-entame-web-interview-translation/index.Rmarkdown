@@ -117,7 +117,7 @@ Y: I had no clue what poses should I make. The cameraman would teach me and I co
 
 **E: For example?**
 
-Y: I am often told I have a tanuki face \[a term Japanese usually use to refer to someone with a round face and big, drooping eyes\] so I studied by watching [Ohara Yuno's gravure](https://www.youtube.com/watch?v=bSU1KUgOP9c) because she is the same type.
+Y: I am often told I have a tanuki face \[a term Japanese usually use to refer to someone with a round face and big, drooping eyes\] so I studied by watching [Ōhara Yūno's gravure](https://www.youtube.com/watch?v=bSU1KUgOP9c) because she is the same type.
 
 **E: Do you have a favourite pose or type of swimsuit?**
 
