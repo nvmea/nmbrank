@@ -41,7 +41,7 @@ She joined NMB in 2015. Full six years before her gravure debut. She was only 12
 
 At that time, Yamamoto Sayaka with her overwhelming presence was still in the group. So was Watanabe Miyuki. First generation members had been enjoying tremendous popularity and a mere greenhorn had no chance to compete on equal terms with them. Senpais already had their fanbase. And even though a certain type of fans do like new shiny things, it was unlikely to expect a 12 year old girl to happen to have the power to make people notice her.
 
-And like that, in a group that boasted tremendous depth, she disappeared in the horse herd.
+And like that, in a group that boasted tremendous depth, she disappeared in the large horse herd.
 
 "I want to be noticed." With that thought in her mind, she fought.
 
@@ -61,7 +61,7 @@ Last spring, a chance has come. After six years of being an idol.
 
 "I was told by a manager, 'If you were asked to do gravure, what would you say?' I answered, 'Please let me do it.'"
 
-Gravure was possibly the last resort for Hongō. If it didn't spark any fire, she would have put the microphone down for good.
+Gravure was possibly the last resort for Hongō. If it didn't spark any interest, she would have put the microphone down for good.
 
 However, her first gravure in BUBKA left an incredible impact. Everyone was taken aback, that such girl had appeared out of nowhere. The range of her impact was not limited to NMB fans, but reached outside people as well.
 
