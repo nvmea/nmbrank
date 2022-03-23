@@ -159,7 +159,7 @@ Y: We did a gravure together before her graduation and I was being touched const
 
 **E: What is your gravure goal?**
 
-Y: I want to hijack the covers! [I tried to explain close to the end of [last article](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/); basically she wants to be on many magazine covers in a short span of time.] Last summer I witness Enako-san doing it and I thought I would like to achieve that as well! Also I want to release a photobook soon!
+Y: I want to hijack the covers! [I tried to explain the term close to the end of the [last article](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/) I translated; basically she wants to be on many magazine covers in a short span of time.] Last summer I witness Enako-san doing it and I thought I would like to achieve that as well! Also I want to release a photobook soon!
 
 <br>
 
