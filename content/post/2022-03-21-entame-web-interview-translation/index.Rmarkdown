@@ -101,7 +101,7 @@ Y: Thank you!
 
 **E: Do you know how many covers have you been on since your debut?**
 
-Y: I cannot really keep up and don't count them, but it's probably more than 10 haha. \[I don't know when exactly this interview was taken, but as of today it has been 18 magazine covers.\]
+Y: I cannot really keep up and don't count them, but it's probably more than 10 haha. \[I don't know when exactly this interview was taken, but as of March it has been 18 magazine covers.\]
 
 **E: Do you receive thanks from editors? Like, "When you appear, the sales are good!"**
 
@@ -113,7 +113,7 @@ Y: Not at all. I considered it something that had nothing to do with me and I wa
 
 **E: So the first shoot was probably somewhat embarrassing?**
 
-Y: I had no clue what poses should I make. The cameraman would teach me and I could no nothing but absorb these little things one by one into my mind. After the amazing reaction to my first gravure, I was given the chance to appear in many more magazines and so I thought I had to learn more about posing and I started checking other gravure idols' works.
+Y: I had no clue what poses I should make. The cameraman would teach me and I could no nothing but absorb these little things one by one into my mind. After the amazing reaction to my first gravure, I was given the chance to appear in many more magazines and so I thought I had to learn more about posing and I started checking other gravure idols' works.
 
 **E: For example?**
 
@@ -127,7 +127,7 @@ Y: I love strapless swimsuits! I get excited when I see those. As for posing, I 
 
 **E: Is there some shoot that was very memorable for you?**
 
-Y: We did a shoot in a bathtub full of yuzus. There were so many flowing around, I thought where the heck did they got all those yuzus?! Probably since there is a "Yuzu" in my name, I have already done such concepts several times.
+Y: We did a shoot in a bathtub full of yuzus. There were so many flowing around, I thought where the heck did they get all those yuzus?! Probably since there is a "Yuzu" in my name, I have already done such concepts several times.
 
 **E: Is there some shoot you would like to do?**
 
@@ -159,7 +159,7 @@ Y: We did a gravure together before her graduation and I was being touched const
 
 **E: What is your gravure goal?**
 
-Y: I want to hijack the covers! [I tried to explain the term close to the end of the [last article](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/) I translated; basically she wants to be on many magazine covers in a short span of time.] Last summer I witness Enako-san doing it and I thought I would like to achieve that as well! Also I want to release a photobook soon!
+Y: I want to hijack the covers! [I tried to explain the term close to the end of the [last article](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/) I translated; basically she wants to be on many magazine covers in a short span of time.] Last summer I witnessed Enako-san doing it and I thought I would like to achieve that as well! Also I want to release a photobook soon!
 
 <br>
 
@@ -209,7 +209,7 @@ Y: Fans are choosing the senbatsu of 27th single so I am feeling very uneasy. Ne
 
 **E: Preliminary results came out soon after the single release.**
 
-Y: I had not expected to rank in senbatsu so I was caught off guard. I watched the announcement stream at home lying down, and when I was called in 14th place, I raised up in shock haha.
+Y: I had not expected to rank in senbatsu so I was caught off guard. I watched the announcement stream at home lying down, and when I was called in 14th place, I rose up in shock haha.
 
 **E: Only 14 members will make it into senbatsu right. How about the midterm results?**
 
