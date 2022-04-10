@@ -20,9 +20,13 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **20/04/2022 --- Monthly Young Magazine (with Wada Miyu and Jōnishi Rei) [3]**
 
+**18/04/2022 --- Weekly Young Magazine [6]**
+
 05/04/2022 --- UteenB
 
 **05/04/2022 --- Manga Action (with Jōnishi Rei)**
+
+30/03/2022 --- Gekkan Entame [2]
 
 **15/03/2022 --- EX Taishū**
 
@@ -48,7 +52,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 31/01/2022 --- BUBKA \[8\]
 
-**28/01/2022 --- Gekkan Entame (with Jōnishi Rei)**
+**28/01/2022 --- Gekkan Entame (with Jōnishi Rei) [1]**
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/)
 
