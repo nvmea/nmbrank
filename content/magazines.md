@@ -22,13 +22,15 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **18/04/2022 --- Weekly Young Magazine [6]**
 
+15/04/2022 --- EX Taishū [2]
+
 05/04/2022 --- UteenB
 
 **05/04/2022 --- Manga Action (with Jōnishi Rei)**
 
 30/03/2022 --- Gekkan Entame [2]
 
-**15/03/2022 --- EX Taishū**
+**15/03/2022 --- EX Taishū [1]**
 
 08/03/2022 --- FLASH [3]
 
