@@ -142,7 +142,7 @@ As I already mentioned, the results of the previous edition are included as well
 ```{r, echo=FALSE}
 reactable(g,
   columns = list(
-    Member = colDef(),
+    Member = colDef(defaultSortOrder = "asc"),
     "Points" = colDef(cell = function(value, index) {
       April <- g$`Points (April)`[index]
       April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
@@ -245,7 +245,7 @@ There was little movement among the non-senbatsu non-BII members. Out of them, *
 ```{r, echo=FALSE}
 reactable(g2,
   columns = list(
-    Member = colDef(),
+    Member = colDef(defaultSortOrder = "asc"),
     "Points" = colDef(cell = function(value, index) {
       April <- g2$`Points (April)`[index]
       April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
