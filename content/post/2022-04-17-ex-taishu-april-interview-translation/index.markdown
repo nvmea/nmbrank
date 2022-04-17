@@ -8,7 +8,7 @@ tags:
   - nmb
   - translation
 meta_img: images/miku.jpg
-description: Description for the page
+description: The two gravure queens finally meet.
 ---
 
 <style type="text/css">
