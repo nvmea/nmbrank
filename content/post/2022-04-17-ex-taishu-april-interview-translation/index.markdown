@@ -1,5 +1,5 @@
 ---
-title: EX Taishū April interview translation
+title: EX Taishū April interview translation (with Tanaka Miku)
 author: nvmea
 date: '2022-04-17'
 slug: []
