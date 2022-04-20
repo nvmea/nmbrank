@@ -16,6 +16,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
+**28/04/2022 --- Weekly Shōnen Champion [2]**
+
 **22/04/2022 --- UTB**
 
 **20/04/2022 --- Monthly Young Magazine (with Wada Miyu and Jōnishi Rei) [3]**
@@ -60,7 +62,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 24/01/2022 --- BLT \[2\]
 
-20/01/2022 --- Weekly Shōnen Champion
+20/01/2022 --- Weekly Shōnen Champion [1]
 
 13/01/2022 --- Young Champion DVD [1]
 
