@@ -62,7 +62,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/)
 
-**24/01/2022 --- BLT \[2\]**
+**24/01/2022 --- BLT (with eight other NMB members) \[2\]**
 
 **20/01/2022 --- Weekly Shōnen Champion \[1\]**
 
