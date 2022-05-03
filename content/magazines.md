@@ -16,27 +16,27 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
-**28/04/2022 --- Weekly Shōnen Champion [2]**
+**28/04/2022 --- Weekly Shōnen Champion \[2\]**
 
 **22/04/2022 --- UTB**
 
-**20/04/2022 --- Monthly Young Magazine (with Wada Miyu and Jōnishi Rei) [3]**
+**20/04/2022 --- Monthly Young Magazine (with Wada Miyu and Jōnishi Rei) \[3\]**
 
-**18/04/2022 --- Weekly Young Magazine [6]**
+**18/04/2022 --- Weekly Young Magazine \[6\]**
 
-15/04/2022 --- EX Taishū [2]
+15/04/2022 --- EX Taishū \[2\]
 
 05/04/2022 --- UteenB
 
-**05/04/2022 --- Manga Action (with Jōnishi Rei)**
+**05/04/2022 --- Manga Action (with Jōnishi Rei) \[2\]**
 
-30/03/2022 --- Gekkan Entame [2]
+30/03/2022 --- Gekkan Entame \[2\]
 
-**15/03/2022 --- EX Taishū [1]**
+**15/03/2022 --- EX Taishū \[1\]**
 
-08/03/2022 --- FLASH [3]
+08/03/2022 --- FLASH \[3\]
 
-08/03/2022 --- Young Champion DVD [2]
+08/03/2022 --- Young Champion DVD \[2\]
 
 28/02/2022 --- BUBKA \[9\]
 
@@ -46,7 +46,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **22/02/2022 --- DOLCE**
 
-**18/02/2022 --- Monthly Young Magazine [2]**
+**18/02/2022 --- Monthly Young Magazine \[2\]**
 
 **09/02/2022 --- BOMB (with Jōnishi Rei)**
 
@@ -56,15 +56,19 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 31/01/2022 --- BUBKA \[8\]
 
-**28/01/2022 --- Gekkan Entame (with Jōnishi Rei) [1]**
+31/01/2022 --- blt graph
+
+**28/01/2022 --- Gekkan Entame (with Jōnishi Rei) \[1\]**
 
 -   [interview translation](https://stanyuzu.netlify.app/post/2022-01-31-gekkan-entame-january-interview-translation-with-rei/)
 
-24/01/2022 --- BLT \[2\]
+**24/01/2022 --- BLT \[2\]**
 
-20/01/2022 --- Weekly Shōnen Champion [1]
+**20/01/2022 --- Weekly Shōnen Champion \[1\]**
 
-13/01/2022 --- Young Champion DVD [1]
+**18/01/2022 --- Manga Action (with Katō Yūka) \[1\]**
+
+13/01/2022 --- Young Champion DVD \[1\]
 
 **08/01/2022 --- Weekly Young Magazine \[4\]**
 
@@ -104,7 +108,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 28/09/2021 --- Young Champion \[1\]
 
-**21/09/2021 --- Monthly Young Magazine [1]**
+**21/09/2021 --- Monthly Young Magazine \[1\]**
 
 10/09/2021 --- FLASH Special (with Abe Wakana) \[1\]
 
