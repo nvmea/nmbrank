@@ -16,6 +16,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
+30/05/2022 --- Weekly Young Magazine \[7\]
+
 **28/04/2022 --- Weekly Shōnen Champion \[2\]**
 
 **22/04/2022 --- UTB**
