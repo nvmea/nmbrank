@@ -1,0 +1,73 @@
+---
+title: Akarin's YT series stats
+author: nvmea
+date: '2022-07-05'
+tags:
+  - nmb
+  - stats
+meta_img: images/akarin.jpg
+description: Tiktok is the winner
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(reactable)
+library(htmltools)
+```
+
+
+The video series hosted by a former first generation member Yoshida Akari has arrived to its finish. It was not without generating some heated discussions among fans throughout, but this article stays away from all of that and just looks at how the respective videos fared. For better or worse, the numbers are largely incomparable to each other, but it is also an useful exercise to show why! The main problem is simply the inevitable phenomenon of weakening interest over time. So if everyone was hyped for and watched the first video --- coincidentally featuring Akarin's main favourite Yamamoto Mikana! --- and if in the first week even random 8th gens could get around 20k views, by the end of the project only the REAL FANS stayed and even popular senbatsu members barely got over 10k views. Nevertheless, views are not the only metrics and we of course have other indicators, namely likes and comments. Even those are far from not being influenced by the release date, but it still offers some nice correction. 
+
+There did not seem to be a clear pattern in the release order, excepting the first (first two?) video and then likely the Matsuoka Sakura's one, which landed just as she had won the 8th gen Showroom event. So you probably just had to be lucky if you wanted more attention --- that is, from viewers, but also from Akarin herself! (And most ideally your video wouldn't include a dumb error, which would make them reupload the video and take away from you a big part of your views, comments and likes --- like what happened to Matsumoto Mihina. Her numbers are therefore probably less than half of what they would have been. That should be about it for the caveats.)
+
+(Data collected at July 6, 3 AM JST)
+
+```{r table, echo=F, message = F}
+
+akarin <- read_csv("akarin.csv", show_col_types = F) %>% 
+  mutate(title = str_glue("<a href='{url}' target='_blank'> {title} </a>")) %>% 
+  select(Member = title, Released = publication_date, Views = viewCount, Likes = likeCount, Comments = commentCount)
+
+orange_pal <- function(x) rgb(colorRamp(c("#F0F8FF", "#7AA9FF"))(x), maxColorValue = 255)
+
+pal <- function(column, data = akarin, ...) {
+  colDef(...,
+      style = function(value) {
+        if (value == 0) {
+          list(color = "#aaa")
+        } else {
+          normalized <- (value - min(data[[column]])) / (max(data[[column]]) - min(data[[column]]))
+          color <- orange_pal(normalized)
+          list(background = color)
+          }
+        }
+      )
+    }
+
+reactable(akarin,
+    showSortIcon = FALSE,
+    defaultPageSize = 25,
+    defaultSortOrder = "desc",
+    defaultSorted = "Views",
+    borderless = T,
+    defaultColDef = colDef(headerClass = "bar-sort-header"),
+    columns = list(
+    Member = colDef(html = T),
+    Views = pal("Views"),
+    Likes = pal("Likes"),
+    Comments = pal("Comments"))
+    )
+
+```
+
+```{css, echo = F}
+.bar-sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.bar-sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+```
