@@ -10,13 +10,23 @@ date: '2021-10-05'
 }
 </style>
 
-This aspires to be a list of all Yuzuha's magazine appearances since April 2021. I've manually backtracked it by going through her tweets, so might have forgotten or messed up something! Features in bold are cover features. Numbers in brackets signal how many appearances in given magazine. Obviously gonna be updated periodically. I'll try to make it prettier at some point too.
+This aspires to be a list of all Yuzuha's magazine appearances since April 2021. Features in bold are cover features. Numbers in brackets signal how many appearances in given magazine. Obviously gonna be updated periodically. I'll try to make it prettier at some point too.
 
 <br>
 
 ### 2022
 
-29/06/2022 --- FLASH [4]
+**28/09/2022 --- Gravure The Television**
+
+**09/08/2022 --- Meccha! NMB48**
+
+**08/08/2022 --- BOMB [2]**
+
+**23/07/2022 --- BLT (with four other NMB members) [3]**
+
+29/06/2022 --- FLASH Special [4]
+
+28/06/2022 --- FLASH [4]
 
 **27/06/2022 --- Weekly Young Magazine \[8\]**
 
