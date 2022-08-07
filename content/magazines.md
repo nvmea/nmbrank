@@ -18,7 +18,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **28/09/2022 --- Gravure The Television (with Sumino Wakana)**
 
-**06/09/2022 --- Bessatsu Young Champion (with Jōnishi Rei and Kawakami Chihiro) **
+**06/09/2022 --- Bessatsu Young Champion (with Jōnishi Rei and Kawakami Chihiro)**
 
 **09/08/2022 --- Meccha! NMB48 (with five other NMB members)**
 
