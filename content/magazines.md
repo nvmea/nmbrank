@@ -20,6 +20,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **20/09/2022 --- Young Champion Retsu**
 
+14/09/2022 --- IDOL AND READ
+
 **06/09/2022 --- Bessatsu Young Champion (with Jōnishi Rei and Kawakami Chihiro)**
 
 06/09/2022 --- Manga Action (with five other NMB members) [3]
