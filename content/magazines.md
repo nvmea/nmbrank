@@ -26,6 +26,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 06/09/2022 --- Manga Action (with five other NMB members) [3]
 
+**31/08/2022 --- BUBKA \[10\]**
+
 16/08/2022 --- EX Taishū \[3\]
 
 **09/08/2022 --- Meccha! NMB48 (with five other NMB members)**
