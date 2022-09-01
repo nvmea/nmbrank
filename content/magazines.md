@@ -22,6 +22,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 14/09/2022 --- IDOL AND READ
 
+**12/09/2022 --- Big Comic Spirits**
+
 **08/09/2022 --- Weekly Shōnen Champion \[3\]**
 
 **06/09/2022 --- Bessatsu Young Champion (with Jōnishi Rei and Kawakami Chihiro)**
