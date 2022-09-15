@@ -22,6 +22,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **20/09/2022 --- Young Champion Retsu**
 
+**16/09/2022 --- FRIDAY [4]**
+
 14/09/2022 --- IDOL AND READ
 
 **12/09/2022 --- Weekly Young Magazine \[9\]**
