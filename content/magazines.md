@@ -20,6 +20,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **06/10/2022 --- Monthly Shōnen Champion [2]**
 
+30/09/2022 --- BUBKA [11]
+
 **28/09/2022 --- Gravure The Television (with Sumino Wakana)**
 
 **20/09/2022 --- Young Champion Retsu**
