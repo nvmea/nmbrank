@@ -16,6 +16,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
+**20/10/2022 --- GIRLSgraph**
+
 18/10/2022 --- Young Champion Retsu DVD
 
 **06/10/2022 --- Monthly Shōnen Champion [2]**
