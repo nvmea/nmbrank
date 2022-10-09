@@ -1,0 +1,126 @@
+---
+title: 17th gen definitive ranking
+author: nvmea
+date: '2022-10-09'
+tags:
+  - akb
+  - stats
+meta_img: images/noz.jpg
+description: Results which put 90 % of voters to shame after reading them.
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(reactable)
+library(htmltools)
+library(hrbrthemes)
+library(ggthemes)
+
+inaki <- read_csv("inaki.csv")
+
+d <- inaki %>%
+  pivot_longer(cols = 2:length(inaki), values_to = "Member")
+
+d2 <- d %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  mutate("Average Rank" = as.numeric(format(
+    round(11 - (Points / 15), 2),
+    nsmall = 2
+  ))) %>% 
+  mutate(Standings = 1:10) 
+```
+
+One night, talking to my dear friends, I came up with the random idea to make a quick ranking of 17th gen girls. As a reward for that foolishness, I was harassed by them to use my precious free time to produce a report on the State of 17th generation about half a year after their famous debut.
+
+I aggregated the votes they picked up god knows where, someone please check they are all even real, and produced the final result. The counting method is simple --- first place gets 10 points, second 9 points and so on.
+
+<br>
+
+```{r, echo=F}
+reactable(d2,
+  columns = list(
+    Member = colDef(defaultSortOrder = "asc"),
+    "Points",
+    "Average Rank" = colDef(
+      defaultSortOrder = "asc"),
+    "Standings"
+  ),
+  defaultPageSize = 10,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(sortNALast = TRUE, headerClass = "sort-header"),
+  rowClass = "my-row",
+  showSortIcon = FALSE,
+  borderless = T,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center")
+  )
+)
+```
+
+<br>
+
+<br>
+
+The winner is, to everyone's delight, she only got one last place after all, and who knows what weirdo did that, **Kokone**. It was a very close fight with **Sora**, who in fact earned the most first places. Third place goes to **Mayū**, who was, wait for this fun fact, the only member who appeared in every position of the votes, moreover in a nice, symmetrical way (see the "heatmap" below). Closely followed the handshake sales queens **Miyū** and **Eriko**, closing the first half of the rankings.
+
+The sixth place went, maybe a bit surprisingly, to the 17th gen ace **Airi**, who actually got no first place vote. Further down the list we see the two **Yukis** --- I was personally surprised by Hirata not being that much popular, only sparsely occupying the front places of people's votes and once again with no first place votes. Ninth place narrowly went to **Moka**, who in this vote did not replicate her popularity among Korean gif makers.
+
+It has to be said that due to the relatively small number of votes the differences are not that pronounced; few more votes could have swayed the results and shaped the narrative differently. The only exception is the last place, which is a bit of an awkward conclusion to our enterprise. **Nozomi** was overwhelmingly the tenth choice of voters and the distance from tenth to ninth was in the end much bigger than from ninth to first... Don't blame me!
+
+So that's it! Please keep enjoying our lovely 18th gener... I mean 17th generation babies!
+
+```{r, echo=F}
+inaki$...1 <- 1:10
+
+h <- inaki %>%
+  pivot_longer(cols = 2:length(inaki), values_to = "Member") %>%
+  filter(is.na(Member) == F)
+
+h %>%
+  count(Member, ...1) %>%
+  ggplot(aes(...1, Member, fill = n)) +
+  geom_tile(colour = "white") +
+  geom_text(aes(label = n), colour = "white", size = 5) +
+  labs(x = NULL, y = NULL) +
+  scale_y_discrete(expand = c(0, 0), limits = rev) +
+  scale_x_continuous(expand = c(0, 0), breaks = 1:10) +
+  theme_ipsum_tw(grid = F, base_size = 14) +
+  scale_fill_continuous_tableau("Green-Gold") +
+  theme(axis.text.x = element_text(vjust = -1), legend.position = "none")
+```
+
+```{r, echo=FALSE}
+inaki$...1 <- 1:10
+
+reactable(inaki,
+  sortable = F,
+  compact = T,
+  bordered = T,
+  style = list(fontSize = 14),
+  defaultPageSize = 10,
+  columns = list(
+    ...1 = colDef(
+      name = "Rank",
+      style = list(position = "sticky", left = 0, background = "#fff", zIndex = 1),
+      headerStyle = list(position = "sticky", left = 0, background = "#fff", zIndex = 1)
+    )
+  )
+)
+```
+
+
+```{css, echo = FALSE}
+.sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.my-row:hover {
+  background-color: #FFE6E6;
+}
+```
