@@ -18,6 +18,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 01/11/2022 --- Bessatsu Young Champion DVD (with Jōnishi Rei and Kawakami Chihiro)
 
+31/10/2022 --- EMO girl
+
 **20/10/2022 --- GIRLSgraph**
 
 18/10/2022 --- Young Champion Retsu DVD
