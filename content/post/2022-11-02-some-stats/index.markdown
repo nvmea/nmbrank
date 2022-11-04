@@ -26,7 +26,7 @@ description: All the data you didn't even know you needed.
 <link href="{{< blogdown/postref >}}index_files/reactable/reactable.css" rel="stylesheet" />
 <script src="{{< blogdown/postref >}}index_files/reactable-binding/reactable.js"></script>
 
-There were recently two “popularity contests” that caught my attention. The first one was the project ran by NMB official twitter, where all members performed a confession scene. The second one was an [internet vote](https://nlab.itmedia.co.jp/research/articles/950716/vote_result/), which was irrelevant enough and employed decent security measures against not allowing one person to vote more than once, and if you’re from a foreign country to not vote at all, that it produced results that align quite well with other data we have. I added the most recent Twitter engagement I’ve been collecting, and also rough Instagram data collected by “eyes”. I’m probably gonna write something soon on the next NMB senbatsu outlook and this could serve as sort of a base for it.
+There were recently two “popularity contests” that caught my attention. The first one was the project ran by NMB official Twitter, where all members performed a confession scene. The second one was an [internet vote](https://nlab.itmedia.co.jp/research/articles/950716/vote_result/), which was irrelevant enough and employed decent security measures against not allowing one person to vote more than once (and excluding votes from foreign countries completely), that it produced results that align quite well with other data we have. I added the most recent Twitter engagement I’ve been collecting, and also rough Instagram data collected by “eyes”. I’m probably gonna write something soon on the next NMB single senbatsu outlook and this could serve as sort of a base for it.
 
 <br>
 
@@ -62,7 +62,7 @@ There were recently two “popularity contests” that caught my attention. The 
 
 ##### Caveats
 
--   Some members post a lot of “crap”, which always scores much worse than selfies, prime example being Hara Karen posting a lot of pictures of sky — but overall she is likely the only one whose numbers are “ruined” by that.
+-   Some members post a lot of “crap”, which always scores much worse than selfies, prime example being Hara Karen posting a lot of pictures of the sky — but overall she is likely the only one whose numbers are “ruined” by that.
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
