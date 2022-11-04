@@ -1,0 +1,171 @@
+---
+title: Some stats
+author: nvmea
+date: '2022-11-02'
+slug: []
+categories: []
+tags:
+  - nmb
+  - stats
+meta_img: images/no.jpg
+description: All the data you didn't even know you needed.
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(reactable)
+library(reactablefmtr)
+library(paletteer)
+library(hrbrthemes)
+library(myriad)
+
+mushi <- read_csv("mushi.csv", show_col_types = F)
+tweet <- read_csv("tweet.csv", show_col_types = F)
+vote <- read_csv("randomvote.csv", show_col_types = F)
+insta <- read_csv("insta.csv", show_col_types = F)
+
+accs7 <- c("momoka__asao48", "kkk_902_nnn", "fuchan_nmb", "aipipi_48", "wakanyan__nmb48", "yunanan0919", "maity_nmb", 
+           "anju_manabe0610", "_Misaki_Yoshino", "MYUMYU_48", "siyo_min")
+accs8 <- c("ike_honoka", "sakura_panda48", "sakashita_mako", "Michapiiii_" , 
+           "sakamoto_risa48", "_sakurada_ayaka", "yayoko_845_48", "tanaka_yukino48", "fukufuku_ami", "sakura__nmb48", 
+           "miochi_official", "mihina_48", "pika_23_48")
+```
+
+There were recently two "popularity contests" that caught my attention. The first one was the project ran by NMB official twitter, where all members performed a confession scene. The second one was an [internet vote](https://nlab.itmedia.co.jp/research/articles/950716/vote_result/), which was irrelevant enough and employed decent security measures against not allowing one person to vote more than once, and if you're from a foreign country to not vote at all, that it produced results that align quite well with other data we have. I added the most recent Twitter engagement I've been collecting, and also rough Instagram data collected by "eyes". I'm probably gonna write something soon on the next NMB senbatsu outlook and this could serve as sort of a base for it.
+
+<br>
+
+### Confession video Twitter campaign
+
+##### Caveats
+
+-   Most members retweeted --- in some form --- the video, which obviously boosts its numbers, but not all did. I did not check all of the members, but I know that at least Yuzuha and Kuroshima Sakura did not retweet theirs.
+
+-   Another one is related to date of release, where the earlier releases usually tend to score better, although here it seems to be noticeable only on the first one of Kameno Zion.
+
+
+```{r, echo=FALSE}
+
+reactable(mushi,
+          columns = list(
+            Likes = colDef(style = color_scales(
+        data = mushi, 
+        colors = gameofthrones::gameofthrones(10, begin = 0.2, direction = -1, option = "targaryen"))),
+            Retweets = colDef(style = color_scales(
+        data = mushi, 
+        colors = gameofthrones::gameofthrones(10, begin = 0.2, direction = -1, option = "Baratheon")))),
+          pageSizeOptions = c(10, 20, 50),
+          showPageSizeOptions = T,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(headerClass = "sort-header"),
+  showSortIcon = FALSE,
+  borderless = T,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center")
+  )) |> add_source(source = "Data collected on October 17", font_size = 18, font_style = "italic")
+```
+
+<br>
+
+<br>
+
+### Web fanvote
+
+##### Caveats
+
+-   Even though the anti-cheating measures were relatively strict, there were clearly at least two blatant, unnatural jumps in votes --- Kuroshima Sakura and Sakashita Mako. As for the rest, the results looked very much similar throughout the voting period and are also pretty consistent with the other data.
+
+```{r, echo=FALSE, fig.height = 8}
+names7 <- c("浅尾桃香", "和田海佑", "隅野和奏", "黒田楓和", "佐月愛果", "早川夢菜", "平山真衣", "眞鍋杏樹", "芳野心咲", "李始燕", "瓶野神音")
+names8 <- c("松本海日菜", "龍本弥生", "福野杏実", "松野美桜", "坂本理紗", "山本光", "池帆乃香", "松岡さくら", "田中雪乃", "桜田彩叶", "黒島咲花", "坂下真心", "坂田心咲")
+
+ggplot(vote, aes(reorder(Member, Votes), Votes)) +
+  coord_flip() +
+  geom_point(size = 3) +
+  geom_point(data = subset(vote, Member %in% names7), size = 3, colour = "#CD5B45") +
+  geom_point(data = subset(vote, Member %in% names8), size = 3, colour = "#45b7cd") +
+  geom_text(label = vote$Votes, nudge_y = 20, size = 4, family = "Osaka", fontface = "bold") +
+  labs(x = NULL, y = NULL, title = "Number of votes") +
+  theme_myriad_new(base_size = 13, base_family = "Osaka")
+```
+
+<br>
+
+<br>
+
+### Twitter engagement data
+
+##### Caveats
+
+-   Some members post a lot of "crap", which always scores much worse than selfies, prime example being Hara Karen posting a lot of pictures of sky --- but overall she is likely the only one whose numbers are "ruined" by that.
+
+```{r echo=FALSE, fig.height=8}
+tweet2 <- tweet %>%    
+  group_by(screen_name) %>%
+  summarize(rtlikemean = round(mean(favorite_count + retweet_count))) %>%
+  arrange(desc(rtlikemean))
+
+  ggplot(tweet2, aes(reorder(screen_name, rtlikemean), rtlikemean)) +
+  coord_flip() +
+  geom_point(size = 3) +
+  geom_point(data = subset(tweet2, screen_name %in% accs7), size = 3, colour = "#CD5B45") +
+  geom_point(data = subset(tweet2, screen_name %in% accs8), size = 3, colour = "#45b7cd") +
+  geom_text(label = tweet2$rtlikemean, nudge_y = 500, size = 4, family = "Myriad Pro", fontface = "bold") +
+  labs(x = NULL, y = NULL, title = "Average RTs + Likes on tweets with media in 2022") +
+  theme_myriad_new(base_size = 14) 
+```
+
+<br>
+
+<br>
+
+### Instagram data
+
+##### Caveats
+
+-   As I already prefaced, this was collected manually (there's too many hoops to jump through to get the data in a more compact way) by critically looking at the first 10 to 20 posts and estimating by calculations in my head. There's likely some margin of error.
+
+-   Compared to Twitter, the fluctuations can be pretty big, but I tried to make sure to take that into account. Some are harder than others, and especially Deguchi Yuina treats her account pretty much as TikTok, posting a lot and sometimes going viral. Overall, read it as a decent estimate, not perfect data.
+
+-   Finally, Maeda Reiko and Mizuta Shiori hide their data, and so does Asao Momoka, but I looked at her account recently and remembered what the values were before she hid them.
+
+```{r, echo=FALSE}
+
+insta <- insta |> filter(Followers > 0)
+
+reactable(insta,
+          columns = list(
+            Followers = colDef(name = "Followers (k)",
+                               style = color_scales(
+        data = insta, 
+        colors = paletteer_c(`"scico::devon"`, 100, -1))),
+            Likes = colDef(name = "Likes (k)",
+                           style = color_scales(
+        data = insta, 
+        colors = gameofthrones::gameofthrones(10, begin = 0.2, direction = -1, option = "Baratheon"))),
+            Comments = colDef(style = color_scales(
+        data = insta,
+          colors = gameofthrones::gameofthrones(10, begin = 0.2, direction = -1, option = "targaryen")))),
+          pageSizeOptions = c(10, 30),
+          showPageSizeOptions = T,
+          compact = T,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(headerClass = "sort-header"),
+  showSortIcon = FALSE,
+  borderless = T,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center")
+  ))
+```
+
+```{css, echo = FALSE}
+.sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+```
