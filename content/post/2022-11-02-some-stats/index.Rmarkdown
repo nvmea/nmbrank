@@ -33,6 +33,8 @@ accs8 <- c("ike_honoka", "sakura_panda48", "sakashita_mako", "Michapiiii_" ,
 
 There were recently two "popularity contests" that caught my attention. The first one was the project ran by NMB official Twitter, where all members performed a confession scene. The second one was an [internet vote](https://nlab.itmedia.co.jp/research/articles/950716/vote_result/), which was irrelevant enough and employed decent security measures against not allowing one person to vote more than once (and excluding votes from foreign countries completely), that it produced results that align quite well with other data we have. I added the most recent Twitter engagement I've been collecting, and also rough Instagram data collected by "eyes". I'm probably gonna write something soon on the next NMB single senbatsu outlook and this could serve as sort of a base for it.
 
+But here, I only present you with the numbers. No commentary. I'm leaving the interpretations to the reader!
+
 <br>
 
 ### Confession video Twitter campaign
@@ -78,15 +80,17 @@ reactable(mushi,
 ```{r, echo=FALSE, fig.height = 8}
 names7 <- c("浅尾桃香", "和田海佑", "隅野和奏", "黒田楓和", "佐月愛果", "早川夢菜", "平山真衣", "眞鍋杏樹", "芳野心咲", "李始燕", "瓶野神音")
 names8 <- c("松本海日菜", "龍本弥生", "福野杏実", "松野美桜", "坂本理紗", "山本光", "池帆乃香", "松岡さくら", "田中雪乃", "桜田彩叶", "黒島咲花", "坂下真心", "坂田心咲")
+rnames7 <- c("Asao Momoka", "Wada Miyu", "Sumino Wakana", "Kuroda Fūwa", "Satsuki Aika", "Hayakawa Yuna", "Hirayama Mai", "Manabe Anju", "Yoshin Misaki", "Lee Siyeon", "Kameno Zion")
+rnames8 <- c("Matsumoto Mihina", "Tatsumoto Yayoi", "Fukuno Ami", "Matsuno Mio", "Sakamoto Risa", "Yamamoto Hikaru", "Ike Honoka", "Matsuoka Sakura", "Tanaka Yukino", "Sakurada Ayaka", "Kuroshima Sakura", "Sakashita Mako", "Sakata Misaki")
 
 ggplot(vote, aes(reorder(Member, Votes), Votes)) +
   coord_flip() +
   geom_point(size = 3) +
-  geom_point(data = subset(vote, Member %in% names7), size = 3, colour = "#CD5B45") +
-  geom_point(data = subset(vote, Member %in% names8), size = 3, colour = "#45b7cd") +
-  geom_text(label = vote$Votes, nudge_y = 20, size = 4, family = "Osaka", fontface = "bold") +
+  geom_point(data = subset(vote, Member %in% rnames7), size = 3, colour = "#CD5B45") +
+  geom_point(data = subset(vote, Member %in% rnames8), size = 3, colour = "#45b7cd") +
+  geom_text(label = vote$Votes, nudge_y = 20, size = 4, family = "Myriad Pro", fontface = "bold") +
   labs(x = NULL, y = NULL, title = "Number of votes") +
-  theme_myriad_new(base_size = 13, base_family = "Osaka")
+  theme_myriad_new(base_size = 14)
 ```
 
 <br>
