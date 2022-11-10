@@ -47,7 +47,7 @@ To count the votes, I am using the same methods I used previously, so if you are
 
 ### What are these results
 
-54 wonderful people submitted their ranked lists of top 16 NMB members (although some of them did not use all 16 spots). To count these votes, I tried using several methods with different weights, but in the end I settled for two of them for the sake of simplicity.
+51 wonderful people submitted their ranked lists of top 16 NMB members (although some of them did not use all 16 spots). To count these votes, I tried using several methods with different weights, but in the end I settled for two of them for the sake of simplicity.
 
 1.  Giving 16 points for 1st place, 15 for 2nd place … 1 for 16th place. This method is straightforward - it takes the list as it was submitted and distributes points, not trying to make any assumptions - e.g. whether for some voter there is already a huge difference between 1st place and 2nd place, or on the contrary all of the members on the list are about the same level.
 
