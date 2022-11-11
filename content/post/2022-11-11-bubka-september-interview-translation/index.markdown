@@ -93,7 +93,7 @@ Y: I used to not be able to eat it, I even thought "What is the use for that?" w
 
 **B: Right, your perception has probably changed since becoming an adult. Who are some of the members of the same age in NMB48?**
 
-Y: There is like, Sadano Haruka.
+Y: There is Sadano Haruka.
 
 **B: Do you sense maturity from her?**
 
@@ -121,7 +121,7 @@ Y: Well, in general NMB is full of strong-willed women, so you can imagine, haha
 
 **B: It's on the record as well, isn't it!**
 
-Y: Yes, for sure. Once, we were thinking together about the script for Nandeyanen, Idol, which was the first song of the kenkyūsei stage back then. I would ask her "What we gonna do?" and she would just say "... I don't know". I burst out with anger. We were howling in the dressing room, while Kojima Karin or Mizokawa Mirai, who is even younger than us, would be comforting us.
+Y: Yes, for sure. Once, we were thinking together about the script for "Nandeyanen, Idol", which was the first song of the kenkyūsei stage back then. I would ask her "What we gonna do?" and she would just say "... I don't know". I burst out with anger. We were howling in the dressing room, while Kojima Karin or Mizokawa Mirai, who is even younger than us, would be comforting us.
 
 **B: Nowadays you don't clash like that with members anymore?**
 
@@ -167,7 +167,7 @@ Y: Of course I would like to stand on the stage myself, but I am also interested
 
 **B: Wearing the jersey with "STAFF" on its back?**
 
-Y: I respect that, yes! Before corona, whenever I had time I would be like attending music festivals by myself, and you could see bands, who were to come up next, rehearsing and stuff. It always felt so cool watching that.
+Y: I respect that, yes! Before corona, whenever I had time I would attend music festivals by myself, and you could see bands, who were to come up next, rehearsing and stuff. It always felt so cool watching that.
 
 **B: Would you like to be in a band?**
 
