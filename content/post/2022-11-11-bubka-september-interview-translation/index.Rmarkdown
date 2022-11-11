@@ -1,9 +1,7 @@
 ---
 title: BUBKA September interview translation
 author: nvmea
-date: '2022-11-12'
-slug: []
-categories: []
+date: '2022-11-11'
 tags:
   - nmb
   - translation
