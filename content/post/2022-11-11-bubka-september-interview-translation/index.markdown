@@ -129,7 +129,7 @@ Y: It does not happen as often for sure. I do make sure to express my opinion on
 
 **B: There is a footage from a meeting that happened before this year's New Year stage, and the depiction of the backstage atmosphere looked pretty real.**
 
-Y: Ah, yes, haha. We did know that it would be recorded, but it never crossed our minds that it would be uploaded to Youtube just like that, haha.
+Y: Ah, yes, haha. We did know that it would be recorded, but it never crossed our minds that it would be [uploaded to Youtube](https://www.youtube.com/watch?v=AdLwB04tQmk) just like that, haha.
 
 **B: That's why I was wondering, if that didn't cause any bad blood among the members.**
 
