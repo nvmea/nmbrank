@@ -20,32 +20,36 @@ library(paletteer)
 nmbrank <- read_csv("nmbrank4.csv")
 prevrank <- read_csv("nmbrank3.csv")
 
-d <- nmbrank %>% 
+d <- nmbrank %>%
   pivot_longer(cols = 2:length(nmbrank), values_to = "Member")
-  
+
 d1 <- d %>%
-  count(Member, name = "Votes") %>% filter(!is.na(Member))
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
 
 d2 <- d %>%
   count(Member, wt = ...1, sort = T, name = "Points") %>%
   inner_join(d1) %>%
   mutate("Average Rank" = as.numeric(format(
-    round(17-(Points/Votes), 2), nsmall = 2)
-    ))  %>% 
+    round(17 - (Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
   mutate(Standings = 1:45)
 
-e <- prevrank %>% 
+e <- prevrank %>%
   pivot_longer(cols = 2:length(prevrank), values_to = "Member")
-  
+
 e1 <- e %>%
-  count(Member, name = "Votes") %>% filter(!is.na(Member))
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
 
 e2 <- e %>%
   count(Member, wt = ...1, sort = T, name = "Points") %>%
   inner_join(e1) %>%
   mutate("Average Rank" = as.numeric(format(
-    round(17-(Points/Votes), 2), nsmall = 2)
-    )) %>% 
+    round(17 - (Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
   mutate(Standings = 1:48)
 
 g <- full_join(d2, e2, by = "Member", suffix = c("", " (April)")) %>%
@@ -54,42 +58,43 @@ g <- full_join(d2, e2, by = "Member", suffix = c("", " (April)")) %>%
 
 
 wt <- c(15, 10, 9, 8, 7, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1)
-  
-  nmbrank$...1 <- wt
-  prevrank$...1 <- wt
-    
-  d <- nmbrank %>% 
-    pivot_longer(cols = 2:length(nmbrank), values_to = "Member")
-  
-  d1 <- d %>%
-    count(Member, name = "Votes") %>% filter(!is.na(Member))
-  
-  d2 <- d %>%
-    count(Member, wt = ...1, sort = T, name = "Points") %>%
-    inner_join(d1) %>%
-    mutate("Average Points" = as.numeric(format(
-      round(Points/Votes, 2), nsmall = 2)
-    )) %>% 
-  mutate(Standings = 1:45)
-  
-  e <- prevrank %>% 
-  pivot_longer(cols = 2:length(prevrank), values_to = "Member")
-  
-  e1 <- e %>%
-  count(Member, name = "Votes") %>% filter(!is.na(Member))
 
-  e2 <- e %>%
+nmbrank$...1 <- wt
+prevrank$...1 <- wt
+
+d <- nmbrank %>%
+  pivot_longer(cols = 2:length(nmbrank), values_to = "Member")
+
+d1 <- d %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+d2 <- d %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  inner_join(d1) %>%
+  mutate("Average Points" = as.numeric(format(
+    round(Points / Votes, 2),
+    nsmall = 2
+  ))) %>%
+  mutate(Standings = 1:45)
+
+e <- prevrank %>%
+  pivot_longer(cols = 2:length(prevrank), values_to = "Member")
+
+e1 <- e %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+e2 <- e %>%
   count(Member, wt = ...1, sort = T, name = "Points") %>%
   inner_join(e1) %>%
   mutate("Average Points" = as.numeric(format(
-    round((Points/Votes), 2), nsmall = 2)
-    )) %>% 
+    round((Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
   mutate(Standings = 1:48)
-  
+
 g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (April)"))
-
-
-
 ```
 
 ## Intro
@@ -137,8 +142,10 @@ As I already mentioned, the results of the previous edition are included as well
 ```{r, echo=FALSE}
 reactable(g,
   columns = list(
-    Member = colDef(defaultSortOrder = "asc",
-                    minWidth = 150),
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
     "Points" = colDef(cell = function(value, index) {
       April <- g$`Points (April)`[index]
       April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
@@ -157,16 +164,18 @@ reactable(g,
         div(style = list(fontSize = 12), AprilVotes)
       )
     }),
-    "Average Rank" = colDef(cell = function(value, index) {
-      AprilAvgRank <- g$`Average Rank (April)`[index]
-      AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
-      value <- if (!is.na(value)) value else "–"
-      div(
-        div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), AprilAvgRank)
-      )
-    },
-      defaultSortOrder = "asc"),
+    "Average Rank" = colDef(
+      cell = function(value, index) {
+        AprilAvgRank <- g$`Average Rank (April)`[index]
+        AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), AprilAvgRank)
+        )
+      },
+      defaultSortOrder = "asc"
+    ),
     "Votes (April)" = colDef(show = F),
     "Points (April)" = colDef(show = F),
     "Average Rank (April)" = colDef(show = F),
@@ -225,12 +234,14 @@ There is a weird yoyo between **Shinshin** and **Sadaharu**, who in this electio
 *(With three fewer votes this time, there should be about 400 "missing" points compared to last election, but with some 300 points back in the pool from graduated girls the expected "deflation" of points should be small if any.)*
 
 ```{r}
-g3 <- g |> filter(!is.na(Points)) |> transmute(Member = Member, Points = Points - `Points (April)`, `Average Rank` = `Average Rank` - `Average Rank (April)`, Votes = Votes - `Votes (April)`)
+g3 <- g |>
+  filter(!is.na(Points)) |>
+  transmute(Member = Member, Points = Points - `Points (April)`, `Average Rank` = `Average Rank` - `Average Rank (April)`, Votes = Votes - `Votes (April)`)
 
 reactable(g3,
   compact = F,
   borderless = T,
-  defaultSortOrder = 'desc',
+  defaultSortOrder = "desc",
   defaultColDef = colDef(headerClass = "sort-header"),
   showSortIcon = F,
   showPageSizeOptions = T,
@@ -242,34 +253,34 @@ reactable(g3,
     ),
     Points = colDef(
       minWidth = 150,
-      align = 'center',
+      align = "center",
       cell = data_bars(
         data = g3,
-        text_position = 'outside-end',
+        text_position = "outside-end",
         fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100)
-        )
+      )
     ),
     `Average Rank` = colDef(
       minWidth = 150,
-      align = 'center',
+      align = "center",
       cell = data_bars(
         data = g3,
-        text_position = 'outside-end',
+        text_position = "outside-end",
         fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100),
         number_fmt = scales::number_format(accuracy = 0.01)
       )
     ),
     Votes = colDef(
-     minWidth = 150,
-      align = 'center',
+      minWidth = 150,
+      align = "center",
       cell = data_bars(
         data = g3,
-        text_position = 'outside-end',
+        text_position = "outside-end",
         fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100)
-        ) 
-    )
+      )
     )
   )
+)
 ```
 
 <br>
@@ -285,8 +296,10 @@ As for the rest of the rankings, there are some other 8th gen improvements, nota
 ```{r, echo=FALSE}
 reactable(g2,
   columns = list(
-    Member = colDef(defaultSortOrder = "asc",
-                    minWidth = 150),
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
     "Points" = colDef(cell = function(value, index) {
       April <- g2$`Points (April)`[index]
       April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
