@@ -27,9 +27,9 @@ description: Click to find out how many Nagisa Shibuyas and 9th gens made it.
 }
 </style>
 
-Just as [last year](https://stanyuzu.netlify.app/post/2021-10-20-nmb-26th-single-senbatsu-predictions/), I’m offering some thoughts on what the senbatsu for the next single —- hopefully coming soon! —- might look like. It feels arguably harder this time, since it’s been about a year since management chose a senbatsu, and the current senbatsu includes members we do not really know how they feel about. There is also an entirely new generation (and likely two!) of girls to select from, while graduations slowed down significantly in 2022, mostly not affecting the pool of potential senbatsu candidates. I’m assuming a 16 member senbatsu, without any idea whether that is going to be the number, but just for the sake of simplicity.
+Just like [last year](https://stanyuzu.netlify.app/post/2021-10-20-nmb-26th-single-senbatsu-predictions/), I’m offering some thoughts on what the senbatsu for the next single —- hopefully coming soon! —- might look like. It feels arguably harder this time, since it’s been about a year since management chose a senbatsu, and the current senbatsu includes members we do not really know how they feel about. There is also an entirely new generation (and likely two!) of girls to select from, while graduations slowed down significantly in 2022, mostly not affecting the pool of potential senbatsu candidates. I’m assuming a 16 member senbatsu, without any idea whether that is going to be the number, but just for the sake of simplicity.
 
-I’m obviously not in possession of some inside info, so it’s all just based on some [general stats](https://stanyuzu.netlify.app/post/2022-11-02-some-stats/) and observations and their interpretation. The final stat often referenced in the text is the current single handshake sales, credit to [@nmbprint](https://twitter.com/nmbprint/status/1595657458886017024) for this table below.
+I’m obviously not in possession of some inside info, so it’s all just based on some [general stats](https://stanyuzu.netlify.app/post/2022-11-02-some-stats/), observations, and their interpretation. The final stat often referenced in the text is the current single handshake sales, credit to [@nmbprint](https://twitter.com/nmbprint/status/1595657458886017024) for this table below.
 
 <div align="center">
 
@@ -61,7 +61,7 @@ I’m obviously not in possession of some inside info, so it’s all just based 
 
 10. Shinzawa Nao
 
-I consider the first 7 members guaranteed to be in senbatsu and the last 3 almost guaranteed. Keito and Uuka have been clearly underperforming in many areas, but they have also been favoured by the management (admittedly for mostly good reasons). I feel confident about Shinshin’s chances too — even though her Nambattle success was shaky, she has since achieved the great prize of becoming a Ray model which then seemingly connected to other model jobs, something there have been a dearth of for NMB lately. She has also already had her “test” and is not of the age where you should be “testing” anyone anymore. Overall, even in case of a big shakeup, there are more likely candidates.
+I consider the first 7 members guaranteed to be in senbatsu and the last 3 almost guaranteed. Keito and Uuka have been clearly underperforming in many areas, but they have also been favoured by management (admittedly for mostly good reasons). I feel confident about Shinshin’s chances too — even though her Nambattle success was shaky, she has since achieved the great prize of becoming a Ray model which then seemingly connected to other model jobs, something that has been a dearth of for NMB lately. She has also already had her “test” and is not of the age where you should be “testing” anyone anymore. Overall, even in case of a big shakeup, there are more likely candidates.
 
 ### The new locks
 
@@ -113,11 +113,11 @@ I was very confident that she would be included already for Koi to Ai, but the o
 
 ##### Deguchi Yuina
 
-She could have so easily already been there, and it’s one of the biggest mysteries how her fandom handled the Nambattle election. Nevertheless, she once again sold extremely well and she is also one of the few girls who have found their niche so to say. She’s scored some viral posts on Tiktok and Instagram, and even though it’s not yet led to some massive popularity boost, it’s a very promising path going forward. She has also been entrusted with random jobs here and there and for quite some time already has been the member who often gets selected as a senbatsu replacement or in some “expanded senbatsu” for concert performances. It seems like a good time to give her a shot.
+She could have so easily already been there, and it’s one of the biggest mysteries how her fandom handled the Nambattle election. Nevertheless, she once again sold extremely well and she is also one of the few girls who have found their niche so to say. She’s scored some viral posts on TikTok and Instagram, and even though it has not led to some massive popularity boost yet, it’s a very promising path going forward. She has also been entrusted with random jobs here and there and for quite some time already has been the member who often gets selected as a senbatsu replacement or in some “expanded senbatsu” for concert performances. It seems like a good time to give her a shot.
 
 ##### Asao Momoka
 
-With her almost perfect sales, she has become a very serious contender. She’s always been one of the most popular 7th gens in SNS, she ranked in Nambattle, she was the pillar and occasional centre of Team BII, she acclimatized herself to Team M surprisingly quickly after her transfer (considering she had never undered in any of the other teams before), she ended second in the 7th gen SR battle, she’s about the ideal age to start investing in. But maybe the time is not yet ripe and she is still expected to fully prove herself in her new team and confirm that her results aren’t fluke. At any rate, Mighty got in senbatsu for less!
+With her almost perfect sales, she has become a very serious contender. She’s always been one of the most popular 7th gens in SNS, she ranked in Nambattle, she was the pillar and occasional centre of Team BII, she acclimatized herself to Team M surprisingly quickly after her transfer (considering she had never undered in any of the other teams before), she ended second in the 7th gen SR battle, she’s about the ideal age to start investing in. But maybe the time is not yet ripe and she is still expected to fully prove herself in her new team and confirm that her results aren’t a fluke. At any rate, Mighty got in senbatsu for less!
 
 ##### Sakashita Mako
 
@@ -125,7 +125,7 @@ There are many reasons to argue Mako is the \#2 in the 8th gen hierarchy, and si
 
 ### Anyone else?
 
-I personally don’t see anyone else who’d be worth a special mention. There’s no one from 6th gen and above who performs well enough to even be in the conversation. With 7th gens, Anju has impressive sales and finished in top 4 of the sweaty Ray event (that Shinshin eventually won). But she did not rank in Nambattle, is about the worst performing 7th gen in SNS and management cares about her so much that they even forgot to give her additional handshake slots when literally everyone else who had sold out received them. Siyeon looked like an interesting choice a year ago when we did not have any data — now that we do, it just shows how hard of a task she is facing, to succeed as a Korean. And as for 8th gens, there is probably only Ayaka who could compete with Mako, but there’s also not anything she’d currently be better than Mako at — and even for Mako, the biggest reason to include her is only to push SakaSaka as a combi.
+I personally don’t see anyone else who’d be worth a special mention. There’s no one from 6th gen and above who performs well enough to even be in the conversation. With 7th gens, Anju has impressive sales and finished in top 4 of the sweaty Ray event (that Shinshin eventually won). But she did not rank in Nambattle, is about the worst performing 7th gen in SNS and management cares about her so much that they even forgot to give her additional handshake slots when literally everyone else who had sold out received them. Siyeon looked like an interesting choice a year ago when we did not have any data — now that we do, it just shows how hard of a task she is facing, to succeed as a Korean. And as for 8th gens, there is probably only Ayaka who could compete with Mako, but there also isn’t anything she’d currently better Mako at — and even for Mako, the biggest reason to include her is only to push SakaSaka as a combi.
 
 ### Centre
 
