@@ -16,7 +16,11 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
+19/12/2022 --- Monthly Young Magazine DVD
+
 **18/12/2022 --- Monthly Cyzo**
+
+16/12/2022 --- FRIDAY [5]
 
 01/11/2022 --- Bessatsu Young Champion DVD (with Jōnishi Rei and Kawakami Chihiro)
 
