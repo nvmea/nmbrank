@@ -6,8 +6,8 @@ slug: []
 categories: []
 tags:
   - nmb
-meta_img: images/image.png
-description: Description for the page
+meta_img: images/mai.jpg
+description: Click to find out how many Nagisa Shibuyas and 9th gens made it.
 ---
 
 <script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
