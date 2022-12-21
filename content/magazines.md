@@ -16,6 +16,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2022
 
+21/12/2022 --- FRIDAY Gold [2]
+
 19/12/2022 --- Monthly Young Magazine DVD
 
 **18/12/2022 --- Monthly Cyzo**
