@@ -14,6 +14,12 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 <br>
 
+### 2023
+
+**27/01/2023 --- Young Animal**
+
+**16/01/2023 --- Weekly Young Magazine \[10\]**
+
 ### 2022
 
 21/12/2022 --- FRIDAY Gold [2]
