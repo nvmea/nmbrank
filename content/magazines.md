@@ -65,6 +65,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 06/09/2022 --- Manga Action (with five other NMB members) [3]
 
 **31/08/2022 --- BUBKA \[10\]**
+- [interview translation](https://stanyuzu.netlify.app/post/2022-11-11-bubka-september-interview-translation/)
 
 16/08/2022 --- EX Taishū \[3\]
 
@@ -93,6 +94,7 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 **18/04/2022 --- Weekly Young Magazine \[6\]**
 
 15/04/2022 --- EX Taishū \[2\]
+- [interview translation](https://stanyuzu.netlify.app/post/2022-04-17-ex-taishu-april-interview-translation/)
 
 05/04/2022 --- UteenB
 
