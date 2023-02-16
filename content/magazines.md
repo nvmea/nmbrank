@@ -18,6 +18,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 **09/03/2023 --- BOMB [3]**
 
+**21/02/2023 --- Monthly Young Magazine [4]**
+
 **10/02/2023 --- FRIDAY [6]**
 
 **27/01/2023 --- Young Animal**
