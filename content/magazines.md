@@ -16,6 +16,8 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2023
 
+**14/03/2023 --- SPA!**
+
 **09/03/2023 --- BOMB [3]**
 
 **21/02/2023 --- Monthly Young Magazine [4]**
