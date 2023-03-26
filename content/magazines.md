@@ -16,7 +16,9 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2023
 
-**17/03/2023 --- FRIDAY [7]**
+**04/04/2023 --- Manga Action (with Sumino Wakana) [4]**
+
+17/03/2023 --- FRIDAY [7]
 
 **14/03/2023 --- SPA!**
 
