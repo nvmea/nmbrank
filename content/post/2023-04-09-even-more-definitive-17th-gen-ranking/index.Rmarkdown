@@ -1,0 +1,210 @@
+---
+title: Even more definitive 17th gen ranking
+author: nvmea
+date: '2023-04-09'
+slug: []
+categories: []
+tags:
+  - akb
+meta_img: images/orz.jpeg
+description: Results which put 70 % of voters to shame after reading them.
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = F)
+library(tidyverse)
+library(reactable)
+library(reactablefmtr)
+library(htmltools)
+library(hrbrthemes)
+library(ggthemes)
+library(paletteer)
+
+inaki <- read_csv("inaki.csv")
+inaki2 <- read_csv("inaki2.csv")
+
+
+d <- inaki2 %>%
+  pivot_longer(cols = 2:length(inaki2), values_to = "Member")
+
+d1 <- d %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+d2 <- d %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  mutate("Average Rank" = as.numeric(format(
+    round(11 - (Points / 40), 2),
+    nsmall = 2
+  )))  %>% 
+  mutate(Standings = 1:10) 
+
+e <- inaki %>%
+  pivot_longer(cols = 2:length(inaki), values_to = "Member")
+
+e2 <- e %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  mutate("Average Rank" = as.numeric(format(
+    round(11 - (Points / 15), 2),
+    nsmall = 2
+  ))) %>% 
+  mutate(Standings = 1:10) 
+
+g <- full_join(d2, e2, by = "Member", suffix = c("", " (October)")) %>%
+  select(1:3, 5:6, 4, 7)
+```
+
+
+Welcome to the second edition of 17th gen ranking! We thought the first one was kinda fun so why not do it again. We asked around everywhere, and in the end managed to get 40 votes, smashing the previous record of 15 votes! Thank you everyone!
+
+A comparison is made throughout with the previous, [October edition](https://stanyuzu.netlify.app/post/2022-10-09-17th-gen-definitive-ranking/) of these member rankings (in the table below, they are the smaller numbers in brackets under the current results). There is a very handy "heat map" in the appendix I recommend you referring to while reading the results. The counting method is simple --- first place gets 10 points, second 9 points and so on.
+
+
+<br>
+
+
+```{r}
+reactable(g,
+  columns = list(
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
+    "Points" = colDef(cell = function(value, index) {
+      October <- g$`Points (October)`[index]
+      October <- if (!is.na(October)) str_c("(", October, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), October)
+      )
+    }),
+    "Votes" = colDef(cell = function(value, index) {
+      OctoberVotes <- g$`Votes (October)`[index]
+      OctoberVotes <- if (!is.na(OctoberVotes)) str_c("(", OctoberVotes, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), OctoberVotes)
+      )
+    }),
+    "Average Rank" = colDef(
+      cell = function(value, index) {
+        OctoberAvgRank <- g$`Average Rank (October)`[index]
+        OctoberAvgRank <- if (!is.na(OctoberAvgRank)) str_c("(", OctoberAvgRank, ")") else "(–)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), OctoberAvgRank)
+        )
+      },
+      defaultSortOrder = "asc"
+    ),
+    "Votes (October)" = colDef(show = F),
+    "Points (October)" = colDef(show = F),
+    "Average Rank (October)" = colDef(show = F),
+    "Standings (October)" = colDef(show = F),
+    "Standings" = colDef(
+      defaultSortOrder = "asc",
+      style = function(value, index) {
+        OctoberRank <- g$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) OctoberRank else 0
+        color <- if (is.na(value) == F && value < OctoberRank || OctoberRank == 0) {
+          "#00c800"
+        } else if (is.na(value) == F && value > OctoberRank) {
+          "#dc0000"
+        }
+        list(color = color)
+      },
+      cell = function(value, index) {
+        OctoberRank <- g$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) str_c("(", OctoberRank, ")") else "(-)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), OctoberRank)
+        )
+      }
+    )
+  ),
+  defaultPageSize = 10,
+  defaultSortOrder = "desc",
+  showPageSizeOptions = T,
+  pageSizeOptions = c(10, 20, 50),
+  defaultColDef = colDef(sortNALast = TRUE, headerClass = "sort-header"),
+  rowClass = "my-row",
+  showSortIcon = FALSE,
+  borderless = T,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center")
+  )
+)
+```
+
+<br>
+
+
+The most breaking news is pretty obvious --- we got a new winner! **Eriko's** result mirrors her rocket rise in the last 6 months. She jumped up four places, from fifth straight to first! Eriko got the most first places out of all members and was also the only member who did not receive any tenth place on anyone's ballot. Still, it was a close race and the runner-up --- and winner of the first edition --- **Kokone** was only one or two votes away from repeating. In a clear third place finished **Sora**, whose gap to second and fourth place was about the same.
+
+The rankings from fourth to seventh place were extremely close. In the end, in what was another big story of this ranking, **Hirata Yuki** took the fourth place. Just as Eriko, she leaped over four girls, and just as in Eriko's case, it very much follows her general increase in prominence in the last six months. After all, last time she actually had no one putting her in the first place on their ballots, while this time there were four such people. In the fifth place finished **Mayū**, who on one hand received the most first or second places (together with Kokone) of all the members, but also a lot of places in the bottom third of the rankings --- controversial girl! **Airi** stayed in the sixth place, still not really capturing the hearts of the voters despite her push, and even receiving more tenth places than first places. **Miyū** in seventh place is actually the biggest fall in terms of standings --- however it was clearly not because people had started to hate her, because she received only one tenth place (only the winner Eriko had fewer), but more due to the relative lack of voters who would have placed her in the top ranks.
+
+The eighth and ninth place were again considerably behind the previous group. **Ōta Yuki** was overtaken by her namesake and fell one place down, while **Moka** kept her rank, but it likely wouldn't make her any happier. Finally, just as last time, **Nozomi** ended up in the tenth place. Nevertheless, she was by far the most improved member, and went from being overwhelmingly last to... clearly last. She is still the only who received no first or second place in anyone's vote and keeps being the "popular" choice for the tenth or ninth place, yet compared to the last time, where no one even placed her higher than seventh, the progress is clearly visible!
+
+## Appendix: Votes
+
+```{r}
+inaki2$...1 <- 1:10
+
+h <- inaki2 %>%
+  pivot_longer(cols = 2:length(inaki2), values_to = "Member") %>%
+  filter(is.na(Member) == F)
+
+h %>%
+  count(Member, ...1) %>%
+  ggplot(aes(...1, Member, fill = n)) +
+  geom_tile(colour = "white") +
+  geom_text(aes(label = n), colour = "white", size = 5) +
+  labs(x = NULL, y = NULL) +
+  scale_y_discrete(expand = c(0, 0), limits = rev) +
+  scale_x_continuous(expand = c(0, 0), breaks = 1:10) +
+  theme_ipsum_tw(grid = F, base_size = 14) +
+  scale_fill_continuous_tableau("Green-Gold") +
+  theme(axis.text.x = element_text(vjust = -1), legend.position = "none")
+```
+
+```{r}
+inaki2$...1 <- 1:10
+
+reactable(inaki2,
+  sortable = F,
+  compact = T,
+  bordered = T,
+  style = list(fontSize = 14),
+  defaultPageSize = 10,
+  columns = list(
+    ...1 = colDef(
+      name = "Rank",
+      style = list(position = "sticky", left = 0, background = "#fff", zIndex = 1),
+      headerStyle = list(position = "sticky", left = 0, background = "#fff", zIndex = 1)
+    )
+  )
+)
+```
+
+```{css, echo = FALSE}
+.sort-header[aria-sort]:hover {
+  background-color: #f4b630;
+}
+.sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.my-row:hover {
+  background-color: #FFE6E6;
+}
+```

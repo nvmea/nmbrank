@@ -16,7 +16,13 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2023
 
+06/04/2023 ---  Monthly Shōnen Champion DVD
+
+**05/04/2023 --- Bessatsu Young Champion [2]**
+
 **04/04/2023 --- Manga Action (with Sumino Wakana) [4]**
+
+30/03/2023 --- Gekkan Entame \[3\]
 
 17/03/2023 --- FRIDAY [7]
 
