@@ -16,6 +16,10 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2023
 
+10/05/2023 --- Shūkan Gendai
+
+28/04/2023 --- FRIDAY [8]
+
 06/04/2023 ---  Monthly Shōnen Champion DVD
 
 **05/04/2023 --- Bessatsu Young Champion [2]**
