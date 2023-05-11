@@ -50,7 +50,7 @@ e2 <- e %>%
     )) %>% 
   mutate(Standings = 1:45)
 
-g <- full_join(d2, e2, by = "Member", suffix = c("", " (April)")) %>%
+g <- full_join(d2, e2, by = "Member", suffix = c("", " (October)")) %>%
   select(1:4, 6:8, 5, 9)
 
 
@@ -88,7 +88,7 @@ wt <- c(15, 10, 9, 8, 7, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1)
     )) %>% 
   mutate(Standings = 1:45)
   
-g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (April)"))
+g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (October)"))
 
 
 
@@ -96,7 +96,7 @@ g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (April)"))
 
 ## Intro
 
-This is the fifth time we have asked NMB fans from all around the world at the [NMB discord server](https://discord.gg/94KW7KW) to submit their NMB member rankings. Thanks to everyone who did! We dropped quite a few voters again (44 compared 51 in October and 54 last year!), NMB is clearly flopping! It is nevertheless still a good number and gives the result enough relevancy! The results saw some big shakeups however, so maybe all those missing people were somehow necessary to keep the universe in balance...or was it everyone moving onto 9th gen... at any rate it at least adds to the fun! On the topic of 9th gens, I was pleasantly surprised to see that out of the 17 girls added to the pool, only 2 of them got no vote. I had feared it would be much worse --- 9th gen not flopping! All the seniors still managed to get at least one vote too, which is also great of course!
+This is the fifth time we have asked NMB fans from all around the world at the [NMB discord server](https://discord.gg/94KW7KW) to submit their NMB member rankings. Thanks to everyone who did! We dropped quite a few voters again (44 compared to 51 in October and 54 last year!), NMB is clearly flopping! It is nevertheless still a good number and gives the result enough relevancy! The results saw some big shakeups however, so maybe all those missing people were somehow necessary to keep the universe in balance...or was it everyone moving onto 9th gen... at any rate it at least adds to the fun! On the topic of 9th gens, I was pleasantly surprised to see that out of the 17 girls added to the pool, only 2 of them got no vote. I had feared it would be much worse --- 9th gen not flopping! All the seniors still managed to get at least one vote too, which is also great of course!
 
 To count the votes, I am using the same methods I used previously, so if you are already familiar with it and don't need a refresher, you might skip the next section and go straight to the results! (Yes I know that all of you will skip it and then ask dumb questions already answered there anyway.) Once again a comparison is made throughout with the previous, [October edition](https://stanyuzu.netlify.app/post/2022-11-10-nmb-member-rankings-october-2022-edition/) of these member rankings. There is a very handy "heat map" in the appendix I recommend you referring to while reading the results.
 
@@ -144,58 +144,58 @@ reactable(g,
       minWidth = 150
     ),
     "Points" = colDef(cell = function(value, index) {
-      April <- g$`Points (April)`[index]
-      April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
+      October <- g$`Points (October)`[index]
+      October <- if (!is.na(October)) str_c("(", October, ")") else "(–)"
       value <- if (!is.na(value)) value else "–"
       div(
         div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), April)
+        div(style = list(fontSize = 12), October)
       )
     }),
     "Votes" = colDef(cell = function(value, index) {
-      AprilVotes <- g$`Votes (April)`[index]
-      AprilVotes <- if (!is.na(AprilVotes)) str_c("(", AprilVotes, ")") else "(–)"
+      OctoberVotes <- g$`Votes (October)`[index]
+      OctoberVotes <- if (!is.na(OctoberVotes)) str_c("(", OctoberVotes, ")") else "(–)"
       value <- if (!is.na(value)) value else "–"
       div(
         div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), AprilVotes)
+        div(style = list(fontSize = 12), OctoberVotes)
       )
     }),
     "Average Rank" = colDef(
       cell = function(value, index) {
-        AprilAvgRank <- g$`Average Rank (April)`[index]
-        AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
+        OctoberAvgRank <- g$`Average Rank (October)`[index]
+        OctoberAvgRank <- if (!is.na(OctoberAvgRank)) str_c("(", OctoberAvgRank, ")") else "(–)"
         value <- if (!is.na(value)) value else "–"
         div(
           div(style = list(fontWeight = 600), value),
-          div(style = list(fontSize = 12), AprilAvgRank)
+          div(style = list(fontSize = 12), OctoberAvgRank)
         )
       },
       defaultSortOrder = "asc"
     ),
-    "Votes (April)" = colDef(show = F),
-    "Points (April)" = colDef(show = F),
-    "Average Rank (April)" = colDef(show = F),
-    "Standings (April)" = colDef(show = F),
+    "Votes (October)" = colDef(show = F),
+    "Points (October)" = colDef(show = F),
+    "Average Rank (October)" = colDef(show = F),
+    "Standings (October)" = colDef(show = F),
     "Standings" = colDef(
       defaultSortOrder = "asc",
       style = function(value, index) {
-        AprilRank <- g$`Standings (April)`[index]
-        AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
-        color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
+        OctoberRank <- g$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) OctoberRank else 0
+        color <- if (is.na(value) == F && value < OctoberRank || OctoberRank == 0) {
           "#00c800"
-        } else if (is.na(value) == F && value > AprilRank) {
+        } else if (is.na(value) == F && value > OctoberRank) {
           "#dc0000"
         }
         list(color = color)
       },
       cell = function(value, index) {
-        AprilRank <- g$`Standings (April)`[index]
-        AprilRank <- if (!is.na(AprilRank)) str_c("(", AprilRank, ")") else "(-)"
+        OctoberRank <- g$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) str_c("(", OctoberRank, ")") else "(-)"
         value <- if (!is.na(value)) value else "–"
         div(
           div(style = list(fontWeight = 600), value),
-          div(style = list(fontSize = 12), AprilRank)
+          div(style = list(fontSize = 12), OctoberRank)
         )
       }
     )
@@ -216,7 +216,7 @@ reactable(g,
 
 #### THE BIG NARRATIVES
 
-Out of nowhere, **Nagisa** came back after two years to reclaim her throne --- only the real fans remember she won the very first edition as well (I had to look it up too)! **Mikana** took the second place for the third time in the row, once again coming quite close. The current NMB centre got the most first places, 5, but her support became rather thin, losing 9 voters. **Wakapon** was not able to three-peat as she suffered significant losses for the second time in a row. Even though Wakapon in fact lost fewer voters than Mikana, she also slipped down a few places on most people's ballots, which overall ended up costing her two places.
+Out of nowhere, **Nagisa** came back after two years to reclaim her throne --- only the real fans remember she won the very first edition as well (I had to look it up too)! **Mikana** took the second place for the third time in a row, once again coming quite close. The current NMB centre got the most first places, 5, but her support became rather thin, losing 9 voters. **Wakapon** was not able to three-peat as she suffered significant losses for the second time in a row. Even though Wakapon in fact lost fewer voters than Mikana, she also slipped down a few places on most people's ballots, which overall ended up costing her two places.
 
 What follows is one of the main narratives of these elections. One side of it is the rise of 8th gens. Everyone's favourite SakaSaka combi stormed into the top 10. (Who did they replace? We'll come back to that question in a second!) **Mako** took the fourth place and got the most votes of all the members; **Sakatan** took the eighth place, jumped up 21(!) places, and was for the second time in a row the biggest gainer of points. (Interestingly if you look at the heat map their vote profile is extremely similar, with Mako simply having more support overall.) And there is another newcomer in the top 5, **Siyeon**, who didn't actually gain that much points, but in the situation of everyone around her losing, it was enough to climb up a lot.
 
@@ -228,8 +228,8 @@ What follows is one of the main narratives of these elections. One side of it is
 
 ```{r}
 g3 <- g |>
-  filter(!is.na(Points), !is.na(`Points (April)`)) |>
-  transmute(Member = Member, Points = Points - `Points (April)`, `Average Rank` = `Average Rank` - `Average Rank (April)`, Votes = Votes - `Votes (April)`)
+  filter(!is.na(Points), !is.na(`Points (October)`)) |>
+  transmute(Member = Member, Points = Points - `Points (October)`, `Average Rank` = `Average Rank` - `Average Rank (October)`, Votes = Votes - `Votes (October)`)
 
 reactable(g3,
   compact = F,
@@ -280,7 +280,7 @@ reactable(g3,
 
 Only at the start of the third ten, we find out who vacated all those top 10 places. Arch-rivals **Zion** and **Misaki** ended up on the same number of points, a number very low, which relegated them to the position of one of the biggest losers of this election. They both lost more than 100 points and 11 and 15 voters respectively! The trend is clear --- other 7th gens like **Miyu**, **Anju** and **Mai** (who went from 11 voters to 3!) also dropped down; **Yuna** was the only one who didn't lose, but she didn't really gain either... On the other hand 8th gens scored at least a modest plus everywhere, with the exceptions of **Hono** and **Pikarun**. There's not much to point out about the remaining seniors, as they all seemingly swim against the current of the times.
 
-Let's finally turn our attention to the 9th gens. As I mentioned, 15 out of 17 made it into the rankings (only Sakamoto Reeo and Nishida Honoka did not). Out of them, **Yuka** scored clearly the best result, ranking 32nd, 14 points ahead of **Reipon** and **Tenna**. From there on, the gaps are very small and there's not a lot to dissect. It's rather going to be interesting to see whether 9th gens can emulate 8th gen's upward trajectory --- and whether 8th gens can avert 7th gen's downward trajectory...
+Let's finally turn our attention to the 9th gens. As I mentioned, 15 out of 17 made it into the rankings (only Sakamoto Reio and Nishida Honoka did not). Out of them, **Yuka** scored clearly the best result, ranking 32nd, 14 points ahead of **Reipon** and **Tenna**. From there on, the gaps are very small and there's not a lot to dissect. It's rather going to be interesting to see whether 9th gens can emulate 8th gen's upward trajectory --- and whether 8th gens can avert 7th gen's downward trajectory...
 
 ## Method 2
 
@@ -291,56 +291,56 @@ reactable(g2,
   columns = list(
     Member = colDef(defaultSortOrder = "asc"),
     "Points" = colDef(cell = function(value, index) {
-      April <- g2$`Points (April)`[index]
-      April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
+      October <- g2$`Points (October)`[index]
+      October <- if (!is.na(October)) str_c("(", October, ")") else "(–)"
       value <- if (!is.na(value)) value else "–"
       div(
         div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), April)
+        div(style = list(fontSize = 12), October)
       )
     }),
     "Votes" = colDef(cell = function(value, index) {
-      AprilVotes <- g2$`Votes (April)`[index]
-      AprilVotes <- if (!is.na(AprilVotes)) str_c("(", AprilVotes, ")") else "(–)"
+      OctoberVotes <- g2$`Votes (October)`[index]
+      OctoberVotes <- if (!is.na(OctoberVotes)) str_c("(", OctoberVotes, ")") else "(–)"
       value <- if (!is.na(value)) value else "–"
       div(
         div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), AprilVotes)
+        div(style = list(fontSize = 12), OctoberVotes)
       )
     }),
     "Average Points" = colDef(cell = function(value, index) {
-      AprilAvgRank <- g2$`Average Points (April)`[index]
-      AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
+      OctoberAvgRank <- g2$`Average Points (October)`[index]
+      OctoberAvgRank <- if (!is.na(OctoberAvgRank)) str_c("(", OctoberAvgRank, ")") else "(–)"
       value <- if (!is.na(value)) value else "–"
       div(
         div(style = list(fontWeight = 600), value),
-        div(style = list(fontSize = 12), AprilAvgRank)
+        div(style = list(fontSize = 12), OctoberAvgRank)
       )
     }),
     "Average Points" = colDef(),
-    "Votes (April)" = colDef(show = F),
-    "Points (April)" = colDef(show = F),
-    "Average Points (April)" = colDef(show = F),
-    "Standings (April)" = colDef(show = F),
+    "Votes (October)" = colDef(show = F),
+    "Points (October)" = colDef(show = F),
+    "Average Points (October)" = colDef(show = F),
+    "Standings (October)" = colDef(show = F),
     "Standings" = colDef(
       defaultSortOrder = "asc",
       style = function(value, index) {
-        AprilRank <- g2$`Standings (April)`[index]
-        AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
-        color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
+        OctoberRank <- g2$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) OctoberRank else 0
+        color <- if (is.na(value) == F && value < OctoberRank || OctoberRank == 0) {
           "#00c800"
-        } else if (is.na(value) == F && value > AprilRank) {
+        } else if (is.na(value) == F && value > OctoberRank) {
           "#dc0000"
         }
         list(color = color)
       },
       cell = function(value, index) {
-        AprilRank <- g2$`Standings (April)`[index]
-        AprilRank <- if (!is.na(AprilRank)) str_c("(", AprilRank, ")") else "(-)"
+        OctoberRank <- g2$`Standings (October)`[index]
+        OctoberRank <- if (!is.na(OctoberRank)) str_c("(", OctoberRank, ")") else "(-)"
         value <- if (!is.na(value)) value else "–"
         div(
           div(style = list(fontWeight = 600), value),
-          div(style = list(fontSize = 12), AprilRank)
+          div(style = list(fontSize = 12), OctoberRank)
         )
       }
     )
