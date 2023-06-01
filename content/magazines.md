@@ -16,9 +16,17 @@ This aspires to be a list of all Yuzuha's magazine appearances since April 2021.
 
 ### 2023
 
-10/05/2023 --- Shūkan Gendai
+**29/05/2023 --- Weekly Young Magazine [12]**
+
+15/05/2023 --- FRIDAY PREMIUM
+
+01/05/2023 --- Shūkan Gendai
 
 28/04/2023 --- FRIDAY [8]
+
+17/04/2023 --- Weekly Young Magazine [11]
+
+14/04/2023 --- EX Taishū \[4\]
 
 06/04/2023 ---  Monthly Shōnen Champion DVD
 
