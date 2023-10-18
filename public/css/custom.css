@@ -76,7 +76,7 @@ hr {
 
 .content h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    font-family: "Charter";
+    font-family: "Charter", "Vollkorn";
     color: #333333;
     margin-bottom: 1rem;
 }
@@ -241,14 +241,6 @@ hr {
 .content .navigation .icon {
     width: 16px;
     height: 16px;
-}
-
-/* Partial: Utterances Comments */
-
-.comments {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 100%;
 }
 
 /* < medium screens */
