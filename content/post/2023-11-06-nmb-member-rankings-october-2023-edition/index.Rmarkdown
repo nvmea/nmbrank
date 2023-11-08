@@ -1,0 +1,445 @@
+---
+title: NMB member rankings October 2023 edition
+author: nvmea
+date: '2023-11-06'
+slug: []
+categories: []
+tags:
+  - nmb
+meta_img: images/ss.jpeg
+description: SakaSaka ni, Kosaremashita.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(tidyverse)
+library(reactable)
+library(reactablefmtr)
+library(htmltools)
+library(hrbrthemes)
+library(ggthemes)
+library(paletteer)
+nmbrank <- read_csv("nmbrank6.csv")
+prevrank <- read_csv("nmbrank5.csv")
+
+d <- nmbrank %>%
+  pivot_longer(cols = 2:length(nmbrank), values_to = "Member")
+
+d1 <- d %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+d2 <- d %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  inner_join(d1) %>%
+  mutate("Average Rank" = as.numeric(format(
+    round(17 - (Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
+  mutate(Standings = 1:57)
+
+e <- prevrank %>%
+  pivot_longer(cols = 2:length(prevrank), values_to = "Member")
+
+e1 <- e %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+e2 <- e %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  inner_join(e1) %>%
+  mutate("Average Rank" = as.numeric(format(
+    round(17 - (Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
+  mutate(Standings = 1:59)
+
+g <- full_join(d2, e2, by = "Member", suffix = c("", " (April)")) %>%
+  select(1:4, 6:8, 5, 9)
+
+
+
+wt <- c(15, 10, 9, 8, 7, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1)
+
+nmbrank$...1 <- wt
+prevrank$...1 <- wt
+
+d <- nmbrank %>%
+  pivot_longer(cols = 2:length(nmbrank), values_to = "Member")
+
+d1 <- d %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+d2 <- d %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  inner_join(d1) %>%
+  mutate("Average Points" = as.numeric(format(
+    round(Points / Votes, 2),
+    nsmall = 2
+  ))) %>%
+  mutate(Standings = 1:57)
+
+e <- prevrank %>%
+  pivot_longer(cols = 2:length(prevrank), values_to = "Member")
+
+e1 <- e %>%
+  count(Member, name = "Votes") %>%
+  filter(!is.na(Member))
+
+e2 <- e %>%
+  count(Member, wt = ...1, sort = T, name = "Points") %>%
+  inner_join(e1) %>%
+  mutate("Average Points" = as.numeric(format(
+    round((Points / Votes), 2),
+    nsmall = 2
+  ))) %>%
+  mutate(Standings = 1:59)
+
+g2 <- full_join(d2, e2, by = "Member", suffix = c("", " (April)"))
+```
+
+## Intro
+
+This is the sixth time we have asked NMB fans from all around the world at the [NMB discord server](https://discord.gg/94KW7KW) to submit their NMB member rankings. Thanks to everyone who did! There was about the same number of voters as last time (41 to 44 in April). Well, technically we lost voters for the third time in a row, but we can always spin that as going back to our humble roots! Anyway, unlike in April, we managed to get all 57 eligible NMB members to receive at least one vote! (Even though dramatic events were unfolding during the voting period...)
+
+To count the votes, I am using the same methods I used previously, so if you are already familiar with it and don't need a refresher, you might skip the next section and go straight to the results! (Yes I know that all of you will skip it and then ask dumb questions already answered there anyway.) Once again a comparison is made throughout with the previous, [April edition](https://stanyuzu.netlify.app/post/2023-05-08-nmb-member-rankings-april-2023-edition/) of these member rankings. There is a very handy "heat map" in the appendix I recommend you referring to while reading the results.
+
+## Results
+
+#### What are these results
+
+```{r, results='asis'}
+cat(length(nmbrank) - 1)
+```
+wonderful people submitted their ranked lists of top 16 NMB members. To count these votes, I tried using several methods with different weights, but in the end I settled for two of them for the sake of simplicity.
+
+1.  Giving 16 points for 1st place, 15 for 2nd place ... 1 for 16th place. This method is straightforward - it takes the list as it was submitted and distributes points, not trying to make any assumptions - e.g. whether for some voter there is already a huge difference between 1st place and 2nd place, or on the contrary all of the members on the list are about the same level.
+
+2.  Giving 15 points for 1st place, 10 for 2nd place, 9 for 3rd place, 8-7-6-5-5-4-4-3-3-2-2-1-1. This method, similar to the one used for the Stage48 member rankings, assumes that an idol fan tends to have THE ONE member they feel strongly about and which therefore gets many more points than the other members on the list. It also gives slightly less value to the bottom of the list in accordance with the logic that you are likely to not have as strong opinions about that.
+
+In the end, the differences between both methods are relatively minor. That is however an important finding in itself, as it gives certain credibility to the rankings. (However, I encourage everyone to try on their own if they want to test different methods!)
+
+#### How to read the results
+
+The reading of the results should be fairly straightforward. For each member you have
+
+-   points (based on the vote counting method used)
+
+-   number of votes
+
+-   points/votes which results in
+
+    -   average position (which rank did voters place the member on average) in Method 1
+
+    -   average points in Method 2
+
+-   standings (the green and red colouring shows whether member improved or worsened their ranking compared to the April edition)
+
+As I already mentioned, the results of the previous edition are included as well. They are the smaller numbers in brackets under the current results.
+
+<br>
+
+## Method 1
+
+*Giving points according to the list (1st --- 16 points... 16th --- 1 point).*
+
+```{r, echo=FALSE}
+reactable(g,
+  columns = list(
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
+    "Points" = colDef(cell = function(value, index) {
+      April <- g$`Points (April)`[index]
+      April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), April)
+      )
+    }),
+    "Votes" = colDef(cell = function(value, index) {
+      AprilVotes <- g$`Votes (April)`[index]
+      AprilVotes <- if (!is.na(AprilVotes)) str_c("(", AprilVotes, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), AprilVotes)
+      )
+    }),
+    "Average Rank" = colDef(
+      cell = function(value, index) {
+        AprilAvgRank <- g$`Average Rank (April)`[index]
+        AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), AprilAvgRank)
+        )
+      },
+      defaultSortOrder = "asc"
+    ),
+    "Votes (April)" = colDef(show = F),
+    "Points (April)" = colDef(show = F),
+    "Average Rank (April)" = colDef(show = F),
+    "Standings (April)" = colDef(show = F),
+    "Standings" = colDef(
+      defaultSortOrder = "asc",
+      style = function(value, index) {
+        AprilRank <- g$`Standings (April)`[index]
+        AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
+        color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
+          "#00c800"
+        } else if (is.na(value) == F && value > AprilRank) {
+          "#dc0000"
+        }
+        list(color = color)
+      },
+      cell = function(value, index) {
+        AprilRank <- g$`Standings (April)`[index]
+        AprilRank <- if (!is.na(AprilRank)) str_c("(", AprilRank, ")") else "(-)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), AprilRank)
+        )
+      }
+    )
+  ),
+  defaultPageSize = 10,
+  defaultSortOrder = "desc",
+  showPageSizeOptions = T,
+  pageSizeOptions = c(10, 20, 70),
+  defaultColDef = colDef(sortNALast = TRUE, headerClass = "sort-header"),
+  rowClass = "my-row",
+  showSortIcon = FALSE,
+  borderless = T,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center")
+  )
+)
+```
+
+<br>
+
+#### THE BIG NARRATIVES
+
+**Mikana** has DONE it! For the first time she won using this main counting method (she was first with Method 2 last time), after hovering around the top places forever (naysayers would say it's only because everyone else had already graduated). Mikana got easily the most top 3 votes, which was enough of a cushion to hold the lead comfortably, only at the end it became slightly closer. The second and third place went to **Sakatan** and **Mako**. Sakatan continued her steady rise and this time also got the most first place votes (together with Mikana, five) and after a strong finish even slipped into second place. Mako meanwhile lacked the top heavy support, but on the other hand, her support was the widest and she received the most votes of all members.
+
+The rest of the top 10 was extremely competitive, and every one new vote was shaking up the rankings completely. In the end, **Rei** came up the strongest and finished in fourth place, thanks to four first place votes. **Wakanyan** returned to top 5 after disappointing showing in April, followed by her friend **Aika**, who literally repeated her April result. All in all, 7th gens did well all over the board. **Misaki** was another member who had strangely fallen off in April, just to come back strong now; while **Keito** is another member always solidly in the top 10. **Yayoi's** trajectory is similar to Sakatan's --- improving steadily and now making her first top 10 appearance, but what so far prevents her from scoring an even better result is her lack of first place votes!
+
+The final spot in the top 10 fell to the previous winner **Nagisa**, who obviously lost many votes due to her status of a graduating member --- basically only people who felt really strongly about her included her, so her average rank was very high. **Wakapon**, however, does not have such a convenient excuse for disappointingly dropping out of the top 10 --- she received relatively many votes as usual, and even three first place votes, but somehow the average rank was fairly low for her this time. **Karin**, on the other hand, finally scored a respectable result again, gaining points and voters on her way to twelfth place.
+
+**Yukino** and **Chihiro** finished on equal points, even though their paths to the goal were entirely different. The former got nine more votes than the latter, but her support was very thin and she got no first or second place votes, where Chihiro got five of them. Close behind them was **Zion**, who, similarly to her bestie Misaki, had also fallen in April rankings, but now regained some ground at least a bit. **Reiko** and **Shinshin** scored about the same as last time, but switched their places. In between them was another 7th gen success story, **Miyu**, who rose up ten ranks.
+
+*(With three fewer votes this time, there should be about 400 "missing" points compared to last election, but there are also about 400 points back in the pool from graduated girls, plus some expected drop from graduating girls. So overall, members might even be expected to be in some small plus by default.)*
+
+```{r}
+g3 <- g |>
+  filter(!is.na(Points), !is.na(`Points (April)`)) |>
+  transmute(Member = Member, Points = Points - `Points (April)`, `Average Rank` = `Average Rank` - `Average Rank (April)`, Votes = Votes - `Votes (April)`)
+
+reactable(g3,
+  compact = F,
+  borderless = T,
+  defaultSortOrder = "desc",
+  defaultColDef = colDef(headerClass = "sort-header"),
+  showSortIcon = F,
+  showPageSizeOptions = T,
+  pageSizeOptions = c(10, 20, 60),
+  columns = list(
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
+    Points = colDef(
+      minWidth = 150,
+      align = "center",
+      cell = data_bars(
+        data = g3,
+        text_position = "outside-end",
+        fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100)
+      )
+    ),
+    `Average Rank` = colDef(
+      minWidth = 150,
+      align = "center",
+      cell = data_bars(
+        data = g3,
+        text_position = "outside-end",
+        fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100, direction = -1),
+        number_fmt = scales::number_format(accuracy = 0.01)
+      )
+    ),
+    Votes = colDef(
+      minWidth = 150,
+      align = "center",
+      cell = data_bars(
+        data = g3,
+        text_position = "outside-end",
+        fill_color = paletteer_c(`"ggthemes::Classic Area Red-Green"`, 100)
+      )
+    )
+  )
+)
+```
+
+<br>
+
+Back to some inevitable disappointments, the spice of every election. One of them was **Karen**, who dropped down eight places --- she still got a relatively good number of votes, but they were mostly very low ranks. **Ayapyon** was a rare 8th gen casualty, who just somehow regressed overall.
+
+The third ten is full of members who improved. They're a mixed bag of seniors and newer gens, and most obviously the 9th gens. Maybe surprisingly, the best ranked 9th gen was **Manami**, who got some high ranked votes already. Not as surprisingly, the best ranked 9th gen was also **Yuka** (yes, those two shared the honour), who had already been the best ranked 9th gen in April. Not far behind them were **Reipon** and **Tenna**, who doubled their points and voters.
+
+From there on, it's mostly a story of graduating girls dropping down heavily, lower tier 8th gens stagnating, and most of 9th gens improving --- although even among them were some setbacks. But as already mentioned, every single member got at least two points, so it's all good!
+
+## Method 2
+
+*Giving more weight to 1st place and less to bottom places.*
+
+```{r, echo=FALSE}
+reactable(g2,
+  columns = list(
+    Member = colDef(
+      defaultSortOrder = "asc",
+      minWidth = 150
+    ),
+    "Points" = colDef(cell = function(value, index) {
+      April <- g2$`Points (April)`[index]
+      April <- if (!is.na(April)) str_c("(", April, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), April)
+      )
+    }),
+    "Votes" = colDef(cell = function(value, index) {
+      AprilVotes <- g2$`Votes (April)`[index]
+      AprilVotes <- if (!is.na(AprilVotes)) str_c("(", AprilVotes, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), AprilVotes)
+      )
+    }),
+    "Average Points" = colDef(cell = function(value, index) {
+      AprilAvgRank <- g2$`Average Points (April)`[index]
+      AprilAvgRank <- if (!is.na(AprilAvgRank)) str_c("(", AprilAvgRank, ")") else "(–)"
+      value <- if (!is.na(value)) value else "–"
+      div(
+        div(style = list(fontWeight = 600), value),
+        div(style = list(fontSize = 12), AprilAvgRank)
+      )
+    }),
+    "Average Points" = colDef(),
+    "Votes (April)" = colDef(show = F),
+    "Points (April)" = colDef(show = F),
+    "Average Points (April)" = colDef(show = F),
+    "Standings (April)" = colDef(show = F),
+    "Standings" = colDef(
+      defaultSortOrder = "asc",
+      style = function(value, index) {
+        AprilRank <- g2$`Standings (April)`[index]
+        AprilRank <- if (!is.na(AprilRank)) AprilRank else 0
+        color <- if (is.na(value) == F && value < AprilRank || AprilRank == 0) {
+          "#00c800"
+        } else if (is.na(value) == F && value > AprilRank) {
+          "#dc0000"
+        }
+        list(color = color)
+      },
+      cell = function(value, index) {
+        AprilRank <- g2$`Standings (April)`[index]
+        AprilRank <- if (!is.na(AprilRank)) str_c("(", AprilRank, ")") else "(-)"
+        value <- if (!is.na(value)) value else "–"
+        div(
+          div(style = list(fontWeight = 600), value),
+          div(style = list(fontSize = 12), AprilRank)
+        )
+      }
+    )
+  ),
+  defaultPageSize = 10,
+  defaultSortOrder = "desc",
+  showPageSizeOptions = T,
+  pageSizeOptions = c(10, 20, 70),
+  defaultColDef = colDef(sortNALast = TRUE, headerClass = "sort-header"),
+  borderless = T,
+  rowClass = "my-row",
+  showSortIcon = FALSE,
+  theme = reactableTheme(
+    cellStyle = list(display = "flex", flexDirection = "column", justifyContent = "center"),
+  )
+)
+```
+
+<br>
+
+<br>
+
+#### Differences between methods?
+
+The first two places stay untouched, and rather more clearly defined, since both **Mikana** and **Sakatan** received many first place votes. That's what also helped **Rei** to narrowly overtake **Mako** here. **Nagisa** and **Wakapon** also ended up ranking higher thanks to relatively more top place votes --- although as you can see, the results from sixth to twelfth place are extremely close. In general, the seniors seem to benefit from this method, as they are more likely to have established fans. As always, the differences between methods are not as wildly pronounced in the lower ranks, and due to the small point differences the potential small ranking changes are not that relevant anyway.
+
+## Conclusion
+
+That's it for the sixt edition of NMB member rankings! Once again thanks to everyone who participated and helped with organizing this! I had a lot of fun following the development of the results as votes had been pouring in and hopefully you are going to have some fun seeing the final results as well! Feel free to start all the heated post election discussions and I am always happy to hear criticism and suggestions for the next time! Thank you!
+
+## Appendix: Votes
+
+```{r heatmap, fig.width=8, fig.height=8, echo=FALSE}
+nmbrank$...1 <- 1:16
+
+h <- nmbrank %>%
+  pivot_longer(cols = 2:length(nmbrank), values_to = "Member") %>%
+  filter(is.na(Member) == F)
+
+h %>%
+  count(Member, ...1) %>%
+  ggplot(aes(...1, Member, fill = n)) +
+  geom_tile(colour = "white") +
+  geom_text(aes(label = n), colour = "white") +
+  labs(x = NULL, y = NULL) +
+  scale_y_discrete(expand = c(0, 0), limits = rev) +
+  scale_x_continuous(expand = c(0, 0), breaks = 1:16) +
+  theme_ipsum_tw(grid = F) +
+  scale_fill_continuous_tableau("Green-Gold") +
+  theme(axis.text.x = element_text(vjust = -1), legend.position = "none")
+```
+
+```{r, echo=FALSE}
+nmbrank$...1 <- 1:16
+reactable(nmbrank,
+  sortable = F,
+  compact = T,
+  bordered = T,
+  style = list(fontSize = 14),
+  defaultPageSize = 16,
+  columns = list(
+    ...1 = colDef(
+      name = "Rank",
+      style = list(position = "sticky", left = 0, background = "#fff", zIndex = 1),
+      headerStyle = list(position = "sticky", left = 0, background = "#fff", zIndex = 1)
+    )
+  )
+)
+```
+
+```{css, echo = FALSE}
+.sort-header[aria-sort]:hover {
+  background-color: #f4b630;
+}
+.sort-header[aria-sort="ascending"] {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header[aria-sort="descending"] {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6) !important;
+}
+.sort-header {
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.my-row:hover {
+  background-color: #FFE6E6;
+}
+```
